@@ -1,0 +1,204 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [9 0 R 11 0 R 13 0 R] /Count 3 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Oblique >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier >>
+endobj
+7 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier-Bold >>
+endobj
+8 0 obj
+<< /Length 2847 >>
+stream
+0.58 0.64 0.72 RG 0.5 w
+24.0 556.0 m 300.0 556.0 l S
+BT /F1 7.5 Tf 0.45 0.52 0.60 rg 24.0 560.0 Td (MUFG Masterclass * 02 Architecture & Control-M) Tj ET
+0.07 0.13 0.24 rg 24.0 466.0 276.0 68.0 re f
+0.12 0.24 0.45 RG 1 w 24.0 466.0 276.0 68.0 re s
+0.89 0.18 0.18 rg 24.0 466.0 4 68.0 re f
+BT /F2 7.5 Tf 0.35 0.65 0.95 rg 36.0 518.0 Td (CONTROL-M / JP1 PLAYBOOK) Tj ET
+BT /F2 13 Tf 0.98 0.98 1.0 rg 36.0 500.0 Td (Architecture & Control-M) Tj ET
+BT /F1 8.5 Tf 0.70 0.78 0.88 rg 36.0 484.0 Td (Enterprise Schedulers & Pipelines) Tj ET
+0.80 0.84 0.90 RG 0.75 w 24.0 438.0 m 300.0 438.0 l S
+BT /F2 13.5 Tf 0.08 0.15 0.30 rg 24.0 442.0 Td (1. 4-Step Pipeline Execution Flow) Tj ET
+BT /F1 10.0 Tf 0.20 0.24 0.30 rg 24.0 424.0 Td (Every batch execution triggered via 'python3) Tj ET
+BT /F1 10.0 Tf 0.20 0.24 0.30 rg 24.0 410.5 Td (main.py --run-batch' follows an audited 4-step) Tj ET
+BT /F1 10.0 Tf 0.20 0.24 0.30 rg 24.0 397.0 Td (pipeline designed to prevent unmonitored) Tj ET
+BT /F1 10.0 Tf 0.20 0.24 0.30 rg 24.0 383.5 Td (production drift:) Tj ET
+BT /F2 9.5 Tf 0.18 0.22 0.28 rg 24.0 366.0 Td (* STEP 1: Unix Housekeeping: Captures real Linux) Tj ET
+BT /F1 9.5 Tf 0.18 0.22 0.28 rg 34.0 353.0 Td (OS metrics \(df, free, uptime, ps aux\), purges) Tj ET
+BT /F1 9.5 Tf 0.18 0.22 0.28 rg 34.0 340.0 Td (data/spool_tmp, verifies daemons.) Tj ET
+BT /F2 9.5 Tf 0.18 0.22 0.28 rg 24.0 324.0 Td (* STEP 2: DAG Batch Engine: Resolves schedule) Tj ET
+BT /F1 9.5 Tf 0.18 0.22 0.28 rg 34.0 311.0 Td (dependencies, executes isolated subprocesses,) Tj ET
+BT /F1 9.5 Tf 0.18 0.22 0.28 rg 34.0 298.0 Td (applies retry loops, and evaluates SLAs.) Tj ET
+BT /F2 9.5 Tf 0.18 0.22 0.28 rg 24.0 282.0 Td (* STEP 3: ServiceNow ITIL Triage: Applies Rules) Tj ET
+BT /F1 9.5 Tf 0.18 0.22 0.28 rg 34.0 269.0 Td (A, B, and C to create P1, P2, and P3 tickets) Tj ET
+BT /F1 9.5 Tf 0.18 0.22 0.28 rg 34.0 256.0 Td (with parent-child correlation in) Tj ET
+BT /F1 9.5 Tf 0.18 0.22 0.28 rg 34.0 243.0 Td (data/servicenow_outbox/.) Tj ET
+BT /F2 9.5 Tf 0.18 0.22 0.28 rg 24.0 227.0 Td (* STEP 4: Shift Handover Reports: Generates CSV) Tj ET
+BT /F1 9.5 Tf 0.18 0.22 0.28 rg 34.0 214.0 Td (check-sheet and dark-themed HTML shift handover) Tj ET
+BT /F1 9.5 Tf 0.18 0.22 0.28 rg 34.0 201.0 Td (dashboard in reports/.) Tj ET
+0.80 0.84 0.90 RG 0.75 w 24.0 173.0 m 300.0 173.0 l S
+BT /F2 13.5 Tf 0.08 0.15 0.30 rg 24.0 177.0 Td (2. Control-M / JP1 Enterprise Mapping) Tj ET
+BT /F1 10.0 Tf 0.20 0.24 0.30 rg 24.0 159.0 Td (Use this side-by-side mapping when interviewing at) Tj ET
+BT /F1 10.0 Tf 0.20 0.24 0.30 rg 24.0 145.5 Td (MUFG to prove you understand their enterprise) Tj ET
+BT /F1 10.0 Tf 0.20 0.24 0.30 rg 24.0 132.0 Td (tooling:) Tj ET
+0.58 0.64 0.72 RG 0.5 w 24.0 38.0 m 300.0 38.0 l S
+BT /F1 7.5 Tf 0.45 0.52 0.60 rg 24.0 29.0 Td (Page 1 of 3 * FinOps-BatchGuard MUFG Prep) Tj ET
+endstream
+endobj
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 324.0 576.0] /Contents 8 0 R /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R /F4 6 0 R /F5 7 0 R >> /ProcSet [/PDF /Text] >> >>
+endobj
+10 0 obj
+<< /Length 3252 >>
+stream
+0.58 0.64 0.72 RG 0.5 w
+24.0 556.0 m 300.0 556.0 l S
+BT /F1 7.5 Tf 0.45 0.52 0.60 rg 24.0 560.0 Td (MUFG Masterclass * 02 Architecture & Control-M) Tj ET
+0.97 0.98 0.99 rg 24.0 433.0 276.0 101.0 re f
+0.82 0.86 0.90 RG 0.75 w 24.0 433.0 276.0 101.0 re s
+0.92 0.94 0.97 rg 24.0 516.0 276.0 18 re f
+BT /F2 9.0 Tf 0.10 0.18 0.35 rg 32.0 522.0 Td (1. Schedule Definition) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 504.0 Td (BatchGuard:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 504.0 Td (config/batch_schedule.json) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 489.0 Td (BMC Control-M:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 489.0 Td (Job Definition XML / Smart Folder) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 474.0 Td (Hitachi JP1:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 474.0 Td (Jobnet Definition / Group) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 459.0 Td (CA AutoSys:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 459.0 Td (JIL \(Job Instruction Language\)) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 444.0 Td (Function:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 444.0 Td (Centralized schedule & agent configs) Tj ET
+0.97 0.98 0.99 rg 24.0 324.0 276.0 101.0 re f
+0.82 0.86 0.90 RG 0.75 w 24.0 324.0 276.0 101.0 re s
+0.92 0.94 0.97 rg 24.0 407.0 276.0 18 re f
+BT /F2 9.0 Tf 0.10 0.18 0.35 rg 32.0 413.0 Td (2. Dependency Ordering) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 395.0 Td (BatchGuard:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 395.0 Td (depends_on: ['JOB_01_FX_INGEST']) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 380.0 Td (BMC Control-M:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 380.0 Td (IN-Conditions & OUT-Conditions) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 365.0 Td (Hitachi JP1:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 365.0 Td (Preceding Job Execution Conditions) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 350.0 Td (CA AutoSys:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 350.0 Td (condition: success\(JOB_01\)) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 335.0 Td (Function:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 335.0 Td (Prevents downstream start until OK) Tj ET
+0.97 0.98 0.99 rg 24.0 215.0 276.0 101.0 re f
+0.82 0.86 0.90 RG 0.75 w 24.0 215.0 276.0 101.0 re s
+0.92 0.94 0.97 rg 24.0 298.0 276.0 18 re f
+BT /F2 9.0 Tf 0.10 0.18 0.35 rg 32.0 304.0 Td (3. Cyclic Retries) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 286.0 Td (BatchGuard:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 286.0 Td (max_retries: 2, retry_delay_sec: 2) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 271.0 Td (BMC Control-M:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 271.0 Td (MAXRERUN=2, RERUNMEM=2M) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 256.0 Td (Hitachi JP1:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 256.0 Td (Auto-Retry Settings / Interval) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 241.0 Td (CA AutoSys:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 241.0 Td (n_retrys: 2, retry_interval: 2) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 226.0 Td (Function:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 226.0 Td (Absorbs transient lock/network spikes) Tj ET
+0.58 0.64 0.72 RG 0.5 w 24.0 38.0 m 300.0 38.0 l S
+BT /F1 7.5 Tf 0.45 0.52 0.60 rg 24.0 29.0 Td (Page 2 of 3 * FinOps-BatchGuard MUFG Prep) Tj ET
+endstream
+endobj
+11 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 324.0 576.0] /Contents 10 0 R /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R /F4 6 0 R /F5 7 0 R >> /ProcSet [/PDF /Text] >> >>
+endobj
+12 0 obj
+<< /Length 4059 >>
+stream
+0.58 0.64 0.72 RG 0.5 w
+24.0 556.0 m 300.0 556.0 l S
+BT /F1 7.5 Tf 0.45 0.52 0.60 rg 24.0 560.0 Td (MUFG Masterclass * 02 Architecture & Control-M) Tj ET
+0.97 0.98 0.99 rg 24.0 433.0 276.0 101.0 re f
+0.82 0.86 0.90 RG 0.75 w 24.0 433.0 276.0 101.0 re s
+0.92 0.94 0.97 rg 24.0 516.0 276.0 18 re f
+BT /F2 9.0 Tf 0.10 0.18 0.35 rg 32.0 522.0 Td (4. SLA Tracking) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 504.0 Td (BatchGuard:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 504.0 Td (sla_max_duration_sec: 1.5) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 489.0 Td (BMC Control-M:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 489.0 Td (Batch Impact Manager \(BIM\) Alert) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 474.0 Td (Hitachi JP1:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 474.0 Td (JP1/AJS3 SLA Monitoring) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 459.0 Td (CA AutoSys:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 459.0 Td (term_run_time / alarm_if_fail) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 444.0 Td (Function:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 444.0 Td (Alerts when critical path is delayed) Tj ET
+0.97 0.98 0.99 rg 24.0 324.0 276.0 101.0 re f
+0.82 0.86 0.90 RG 0.75 w 24.0 324.0 276.0 101.0 re s
+0.92 0.94 0.97 rg 24.0 407.0 276.0 18 re f
+BT /F2 9.0 Tf 0.10 0.18 0.35 rg 32.0 413.0 Td (5. Alert Forwarding) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 395.0 Td (BatchGuard:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 395.0 Td (src/incident_manager.py) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 380.0 Td (BMC Control-M:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 380.0 Td (Control-M Shout to ServiceNow) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 365.0 Td (Hitachi JP1:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 365.0 Td (JP1/IM Incident Bridge Forwarder) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 350.0 Td (CA AutoSys:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 350.0 Td (AutoSys Alarm to SNOW API Bridge) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 335.0 Td (Function:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 335.0 Td (Converts exit codes to ITIL tickets) Tj ET
+0.80 0.84 0.90 RG 0.75 w 24.0 304.0 m 300.0 304.0 l S
+BT /F2 13.5 Tf 0.08 0.15 0.30 rg 24.0 308.0 Td (3. Operational Actions & Resuming Batches) Tj ET
+0.94 0.97 1.00 rg 24.0 164.0 276.0 126.0 re f
+0.78 0.88 0.98 RG 0.75 w 24.0 164.0 276.0 126.0 re s
+0.12 0.45 0.85 rg 24.0 164.0 3.5 126.0 re f
+BT /F2 9.5 Tf 0.08 0.32 0.65 rg 34.0 277.0 Td (INTERVIEW SCENARIO: RESUMING FROM FAILURE) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 265.0 Td (If JOB_03 is fixed by the DBA team at 3:15 AM,) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 252.5 Td (how do you resume without re-running JOB_01 and) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 240.0 Td (JOB_02? In Control-M, you perform a 'Rerun from) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 227.5 Td (Failed Job'. In BatchGuard, because states are) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 215.0 Td (saved in SQLite, we inspect job_runs, verify) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 202.5 Td (JOB_01 and JOB_02 are SUCCESS, and start) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 190.0 Td (directly at JOB_03, unblocking JOB_04 upon) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 177.5 Td (completion.) Tj ET
+BT /F2 9.5 Tf 0.18 0.22 0.28 rg 24.0 156.0 Td (* Force OK: Manually sets job state to Success) Tj ET
+BT /F1 9.5 Tf 0.18 0.22 0.28 rg 34.0 143.0 Td (in Control-M to allow downstream jobs to proceed) Tj ET
+BT /F1 9.5 Tf 0.18 0.22 0.28 rg 34.0 130.0 Td (when safe.) Tj ET
+BT /F2 9.5 Tf 0.18 0.22 0.28 rg 24.0 114.0 Td (* Bypass / Skip: Temporarily disables a job) Tj ET
+BT /F1 9.5 Tf 0.18 0.22 0.28 rg 34.0 101.0 Td (without breaking DAG topological dependencies.) Tj ET
+BT /F2 9.5 Tf 0.18 0.22 0.28 rg 24.0 85.0 Td (* Kill / Terminate: Sends SIGKILL to a hung) Tj ET
+BT /F1 9.5 Tf 0.18 0.22 0.28 rg 34.0 72.0 Td (batch process exceeding max run time.) Tj ET
+0.58 0.64 0.72 RG 0.5 w 24.0 38.0 m 300.0 38.0 l S
+BT /F1 7.5 Tf 0.45 0.52 0.60 rg 24.0 29.0 Td (Page 3 of 3 * FinOps-BatchGuard MUFG Prep) Tj ET
+endstream
+endobj
+13 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 324.0 576.0] /Contents 12 0 R /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R /F4 6 0 R /F5 7 0 R >> /ProcSet [/PDF /Text] >> >>
+endobj
+xref
+0 14
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000135 00000 n 
+0000000205 00000 n 
+0000000280 00000 n 
+0000000358 00000 n 
+0000000426 00000 n 
+0000000499 00000 n 
+0000003397 00000 n 
+0000003589 00000 n 
+0000006893 00000 n 
+0000007087 00000 n 
+0000011198 00000 n 
+trailer
+<< /Size 14 /Root 1 0 R >>
+startxref
+11392
+%%EOF

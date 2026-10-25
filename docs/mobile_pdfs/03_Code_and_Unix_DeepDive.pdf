@@ -1,0 +1,197 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [9 0 R 11 0 R 13 0 R 15 0 R] /Count 4 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Oblique >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier >>
+endobj
+7 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier-Bold >>
+endobj
+8 0 obj
+<< /Length 3134 >>
+stream
+0.58 0.64 0.72 RG 0.5 w
+24.0 556.0 m 300.0 556.0 l S
+BT /F1 7.5 Tf 0.45 0.52 0.60 rg 24.0 560.0 Td (MUFG Masterclass * 03 Code & Unix Deep-Dive) Tj ET
+0.07 0.13 0.24 rg 24.0 466.0 276.0 68.0 re f
+0.12 0.24 0.45 RG 1 w 24.0 466.0 276.0 68.0 re s
+0.89 0.18 0.18 rg 24.0 466.0 4 68.0 re f
+BT /F2 7.5 Tf 0.35 0.65 0.95 rg 36.0 518.0 Td (TECHNICAL CODE LEVEL) Tj ET
+BT /F2 13 Tf 0.98 0.98 1.0 rg 36.0 500.0 Td (Code & Unix Deep-Dive) Tj ET
+BT /F1 8.5 Tf 0.70 0.78 0.88 rg 36.0 484.0 Td (Algorithms, Subprocesses & Kernels) Tj ET
+0.80 0.84 0.90 RG 0.75 w 24.0 438.0 m 300.0 438.0 l S
+BT /F2 13.5 Tf 0.08 0.15 0.30 rg 24.0 442.0 Td (1. Kahn's Algorithm in src/engine.py) Tj ET
+BT /F1 10.0 Tf 0.20 0.24 0.30 rg 24.0 424.0 Td (The scheduler implements Kahn's topological sort) Tj ET
+BT /F1 10.0 Tf 0.20 0.24 0.30 rg 24.0 410.5 Td (algorithm to order jobs and detect circular) Tj ET
+BT /F1 10.0 Tf 0.20 0.24 0.30 rg 24.0 397.0 Td (dependencies before spawning processes:) Tj ET
+0.08 0.11 0.16 rg 24.0 156.5 276.0 223.0 re f
+0.18 0.22 0.30 RG 0.75 w 24.0 156.5 276.0 223.0 re s
+BT /F4 8.0 Tf 0.85 0.92 1.0 rg 32.0 366.5 Td (# Kahn's Algorithm in src/engine.py) Tj ET
+BT /F4 8.0 Tf 0.85 0.92 1.0 rg 32.0 355.0 Td (in_degree = {jid: 0 for jid in job_map}) Tj ET
+BT /F4 8.0 Tf 0.85 0.92 1.0 rg 32.0 343.5 Td (adj_list = {jid: [] for jid in job_map}) Tj ET
+BT /F4 8.0 Tf 0.85 0.92 1.0 rg 32.0 332.0 Td (for jid, job in job_map.items\(\):) Tj ET
+BT /F4 8.0 Tf 0.85 0.92 1.0 rg 32.0 320.5 Td (  for up in job.get\('depends_on', []\):) Tj ET
+BT /F4 8.0 Tf 0.85 0.92 1.0 rg 32.0 309.0 Td (    adj_list[up].append\(jid\)) Tj ET
+BT /F4 8.0 Tf 0.85 0.92 1.0 rg 32.0 297.5 Td (    in_degree[jid] += 1) Tj ET
+BT /F4 8.0 Tf 0.85 0.92 1.0 rg 32.0 286.0 Td (queue = [j for j, d in in_degree.items\(\)) Tj ET
+BT /F4 8.0 Tf 0.85 0.92 1.0 rg 32.0 274.5 Td (if d == 0]) Tj ET
+BT /F4 8.0 Tf 0.85 0.92 1.0 rg 32.0 263.0 Td (while queue:) Tj ET
+BT /F4 8.0 Tf 0.85 0.92 1.0 rg 32.0 251.5 Td (  curr = queue.pop\(0\)) Tj ET
+BT /F4 8.0 Tf 0.85 0.92 1.0 rg 32.0 240.0 Td (  ordered.append\(curr\)) Tj ET
+BT /F4 8.0 Tf 0.85 0.92 1.0 rg 32.0 228.5 Td (  for n in adj_list[curr]:) Tj ET
+BT /F4 8.0 Tf 0.85 0.92 1.0 rg 32.0 217.0 Td (    in_degree[n] -= 1) Tj ET
+BT /F4 8.0 Tf 0.85 0.92 1.0 rg 32.0 205.5 Td (    if in_degree[n] == 0:) Tj ET
+BT /F4 8.0 Tf 0.85 0.92 1.0 rg 32.0 194.0 Td (      queue.append\(n\)) Tj ET
+BT /F4 8.0 Tf 0.85 0.92 1.0 rg 32.0 182.5 Td (if len\(ordered\) != len\(job_map\):) Tj ET
+BT /F4 8.0 Tf 0.85 0.92 1.0 rg 32.0 171.0 Td (  raise ValueError\('Cyclic dependency!'\)) Tj ET
+0.80 0.84 0.90 RG 0.75 w 24.0 136.5 m 300.0 136.5 l S
+BT /F2 13.5 Tf 0.08 0.15 0.30 rg 24.0 140.5 Td (2. True Wall-Clock SLA Calculation) Tj ET
+BT /F1 10.0 Tf 0.20 0.24 0.30 rg 24.0 122.5 Td (SLA measurement must not rely on CPU execution) Tj ET
+BT /F1 10.0 Tf 0.20 0.24 0.30 rg 24.0 109.0 Td (time; it must measure real wall-clock latency) Tj ET
+BT /F1 10.0 Tf 0.20 0.24 0.30 rg 24.0 95.5 Td (including retry delays:) Tj ET
+0.58 0.64 0.72 RG 0.5 w 24.0 38.0 m 300.0 38.0 l S
+BT /F1 7.5 Tf 0.45 0.52 0.60 rg 24.0 29.0 Td (Page 1 of 4 * FinOps-BatchGuard MUFG Prep) Tj ET
+endstream
+endobj
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 324.0 576.0] /Contents 8 0 R /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R /F4 6 0 R /F5 7 0 R >> /ProcSet [/PDF /Text] >> >>
+endobj
+10 0 obj
+<< /Length 1395 >>
+stream
+0.58 0.64 0.72 RG 0.5 w
+24.0 556.0 m 300.0 556.0 l S
+BT /F1 7.5 Tf 0.45 0.52 0.60 rg 24.0 560.0 Td (MUFG Masterclass * 03 Code & Unix Deep-Dive) Tj ET
+0.08 0.11 0.16 rg 24.0 380.0 276.0 154.0 re f
+0.18 0.22 0.30 RG 0.75 w 24.0 380.0 276.0 154.0 re s
+BT /F4 8.0 Tf 0.85 0.92 1.0 rg 32.0 521.0 Td (# Measuring Wall-Clock Duration) Tj ET
+BT /F4 8.0 Tf 0.85 0.92 1.0 rg 32.0 509.5 Td (job_start_dt = datetime.now\(\)) Tj ET
+BT /F4 8.0 Tf 0.85 0.92 1.0 rg 32.0 498.0 Td (while attempt <= max_attempts:) Tj ET
+BT /F4 8.0 Tf 0.85 0.92 1.0 rg 32.0 486.5 Td (  exit_code, out, err, dur = execute\(\)) Tj ET
+BT /F4 8.0 Tf 0.85 0.92 1.0 rg 32.0 475.0 Td (  if exit_code != 0 and attempt < max:) Tj ET
+BT /F4 8.0 Tf 0.85 0.92 1.0 rg 32.0 463.5 Td (    time.sleep\(retry_delay_sec\)) Tj ET
+BT /F4 8.0 Tf 0.85 0.92 1.0 rg 32.0 452.0 Td (    attempt += 1) Tj ET
+BT /F4 8.0 Tf 0.85 0.92 1.0 rg 32.0 440.5 Td (job_end_dt = datetime.now\(\)) Tj ET
+BT /F4 8.0 Tf 0.85 0.92 1.0 rg 32.0 429.0 Td (total_sec = \(job_end_dt -) Tj ET
+BT /F4 8.0 Tf 0.85 0.92 1.0 rg 32.0 417.5 Td (job_start_dt\).total_seconds\(\)) Tj ET
+BT /F4 8.0 Tf 0.85 0.92 1.0 rg 32.0 406.0 Td (sla_breached = 1 if total_sec > sla_max) Tj ET
+BT /F4 8.0 Tf 0.85 0.92 1.0 rg 32.0 394.5 Td (else 0) Tj ET
+0.58 0.64 0.72 RG 0.5 w 24.0 38.0 m 300.0 38.0 l S
+BT /F1 7.5 Tf 0.45 0.52 0.60 rg 24.0 29.0 Td (Page 2 of 4 * FinOps-BatchGuard MUFG Prep) Tj ET
+endstream
+endobj
+11 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 324.0 576.0] /Contents 10 0 R /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R /F4 6 0 R /F5 7 0 R >> /ProcSet [/PDF /Text] >> >>
+endobj
+12 0 obj
+<< /Length 3289 >>
+stream
+0.58 0.64 0.72 RG 0.5 w
+24.0 556.0 m 300.0 556.0 l S
+BT /F1 7.5 Tf 0.45 0.52 0.60 rg 24.0 560.0 Td (MUFG Masterclass * 03 Code & Unix Deep-Dive) Tj ET
+0.80 0.84 0.90 RG 0.75 w 24.0 522.0 m 300.0 522.0 l S
+BT /F2 13.5 Tf 0.08 0.15 0.30 rg 24.0 526.0 Td (3. SQLite WAL Mode Architecture) Tj ET
+BT /F1 10.0 Tf 0.20 0.24 0.30 rg 24.0 508.0 Td (Database persistence in src/database.py uses) Tj ET
+BT /F1 10.0 Tf 0.20 0.24 0.30 rg 24.0 494.5 Td (SQLite Write-Ahead Logging \(WAL\) for high) Tj ET
+BT /F1 10.0 Tf 0.20 0.24 0.30 rg 24.0 481.0 Td (concurrency:) Tj ET
+0.08 0.11 0.16 rg 24.0 390.0 276.0 73.5 re f
+0.18 0.22 0.30 RG 0.75 w 24.0 390.0 276.0 73.5 re s
+BT /F4 8.0 Tf 0.85 0.92 1.0 rg 32.0 450.5 Td (# WAL Mode & Pragmas in src/database.py) Tj ET
+BT /F4 8.0 Tf 0.85 0.92 1.0 rg 32.0 439.0 Td (conn = sqlite3.connect\(db_path\)) Tj ET
+BT /F4 8.0 Tf 0.85 0.92 1.0 rg 32.0 427.5 Td (conn.row_factory = sqlite3.Row) Tj ET
+BT /F4 8.0 Tf 0.85 0.92 1.0 rg 32.0 416.0 Td (conn.execute\('PRAGMA foreign_keys = ON;'\)) Tj ET
+BT /F4 8.0 Tf 0.85 0.92 1.0 rg 32.0 404.5 Td (conn.execute\('PRAGMA journal_mode = WAL;'\)) Tj ET
+BT /F2 9.5 Tf 0.18 0.22 0.28 rg 24.0 382.0 Td (* Why WAL?: Writers write to a separate -wal log) Tj ET
+BT /F1 9.5 Tf 0.18 0.22 0.28 rg 34.0 369.0 Td (file. Readers never block writers, and writers) Tj ET
+BT /F1 9.5 Tf 0.18 0.22 0.28 rg 34.0 356.0 Td (never block readers.) Tj ET
+BT /F2 9.5 Tf 0.18 0.22 0.28 rg 24.0 340.0 Td (* Upsert Logic: Uses ON CONFLICT\(run_id, job_id\)) Tj ET
+BT /F1 9.5 Tf 0.18 0.22 0.28 rg 34.0 327.0 Td (DO UPDATE to ensure idempotent status) Tj ET
+BT /F1 9.5 Tf 0.18 0.22 0.28 rg 34.0 314.0 Td (transitions.) Tj ET
+0.80 0.84 0.90 RG 0.75 w 24.0 286.0 m 300.0 286.0 l S
+BT /F2 13.5 Tf 0.08 0.15 0.30 rg 24.0 290.0 Td (4. Unix Housekeeping Commands) Tj ET
+BT /F1 10.0 Tf 0.20 0.24 0.30 rg 24.0 272.0 Td (Exact bash commands in jobs/system_housekeeping.sh) Tj ET
+BT /F1 10.0 Tf 0.20 0.24 0.30 rg 24.0 258.5 Td (explained line-by-line:) Tj ET
+0.97 0.98 0.99 rg 24.0 125.0 276.0 116.0 re f
+0.82 0.86 0.90 RG 0.75 w 24.0 125.0 276.0 116.0 re s
+0.92 0.94 0.97 rg 24.0 223.0 276.0 18 re f
+BT /F2 9.0 Tf 0.10 0.18 0.35 rg 32.0 229.0 Td (Unix Command Reference) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 211.0 Td (Disk Space:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 211.0 Td (df -h / | awk 'NR==2 {print $5, $4}') Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 196.0 Td (Memory Usage:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 196.0 Td (free -m | awk '/^Mem:/ {print $2, $7}') Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 181.0 Td (CPU Load Avg:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 181.0 Td (awk '{print $1}' /proc/loadavg) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 166.0 Td (Zombie Check:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 166.0 Td (ps aux | awk '$8=="Z"' | wc -l) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 151.0 Td (Spool Purge:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 151.0 Td (find spool_tmp/ -name '*.tmp' -delete) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 136.0 Td (Daemon Check:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 136.0 Td (Verifies PIDs & Ports \(7005\)) Tj ET
+0.58 0.64 0.72 RG 0.5 w 24.0 38.0 m 300.0 38.0 l S
+BT /F1 7.5 Tf 0.45 0.52 0.60 rg 24.0 29.0 Td (Page 3 of 4 * FinOps-BatchGuard MUFG Prep) Tj ET
+endstream
+endobj
+13 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 324.0 576.0] /Contents 12 0 R /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R /F4 6 0 R /F5 7 0 R >> /ProcSet [/PDF /Text] >> >>
+endobj
+14 0 obj
+<< /Length 1188 >>
+stream
+0.58 0.64 0.72 RG 0.5 w
+24.0 556.0 m 300.0 556.0 l S
+BT /F1 7.5 Tf 0.45 0.52 0.60 rg 24.0 560.0 Td (MUFG Masterclass * 03 Code & Unix Deep-Dive) Tj ET
+0.99 0.95 0.95 rg 24.0 420.5 276.0 113.5 re f
+0.95 0.80 0.80 RG 0.75 w 24.0 420.5 276.0 113.5 re s
+0.89 0.18 0.18 rg 24.0 420.5 3.5 113.5 re f
+BT /F2 9.5 Tf 0.70 0.10 0.10 rg 34.0 521.0 Td (ZOMBIE PROCESSES EXPLAINED:) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 509.0 Td (A zombie process \(state Z in ps aux\) has) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 496.5 Td (terminated, but its parent has not read its) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 484.0 Td (exit status with wait\(\). Zombies consume zero) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 471.5 Td (CPU/RAM, but they consume PID slots. Kill -9) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 459.0 Td (cannot kill a zombie! You must send SIGCHLD to) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 446.5 Td (the parent \(kill -s SIGCHLD <ppid>\) or restart) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 434.0 Td (the parent.) Tj ET
+0.58 0.64 0.72 RG 0.5 w 24.0 38.0 m 300.0 38.0 l S
+BT /F1 7.5 Tf 0.45 0.52 0.60 rg 24.0 29.0 Td (Page 4 of 4 * FinOps-BatchGuard MUFG Prep) Tj ET
+endstream
+endobj
+15 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 324.0 576.0] /Contents 14 0 R /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R /F4 6 0 R /F5 7 0 R >> /ProcSet [/PDF /Text] >> >>
+endobj
+xref
+0 16
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000142 00000 n 
+0000000212 00000 n 
+0000000287 00000 n 
+0000000365 00000 n 
+0000000433 00000 n 
+0000000506 00000 n 
+0000003691 00000 n 
+0000003883 00000 n 
+0000005330 00000 n 
+0000005524 00000 n 
+0000008865 00000 n 
+0000009059 00000 n 
+0000010299 00000 n 
+trailer
+<< /Size 16 /Root 1 0 R >>
+startxref
+10493
+%%EOF

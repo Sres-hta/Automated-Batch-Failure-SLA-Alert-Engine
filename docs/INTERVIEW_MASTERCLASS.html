@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FinOps-BatchGuard | IT Operations Analyst Interview Masterclass (MUFG Bank)</title>
+  <style>
+    :root {
+      --bg-canvas: #0d1117;
+      --bg-subtle: #161b22;
+      --bg-card: #21262d;
+      --bg-hover: #30363d;
+      --border-muted: #30363d;
+      --border-accent: #58a6ff;
+      --text-main: #f0f6fc;
+      --text-muted: #8b949e;
+      --text-link: #58a6ff;
+      --accent-green: #3fb950;
+      --accent-red: #f85149;
+      --accent-amber: #d29922;
+      --accent-purple: #bc8cff;
+      --accent-blue: #58a6ff;
+      --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+      --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background-color: var(--bg-canvas);
+      color: var(--text-main);
+      font-family: var(--font-sans);
+      line-height: 1.6;
+      display: flex;
+    }
+
+    /* Sidebar Navigation */
+    .sidebar {
+      width: 320px;
+      height: 100vh;
+      position: sticky;
+      top: 0;
+      background-color: var(--bg-subtle);
+      border-right: 1px solid var(--border-muted);
+      padding: 1.5rem 1rem;
+      overflow-y: auto;
+      flex-shrink: 0;
+    }
+
+    .sidebar-title {
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent-blue);
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .sidebar-subtitle {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      margin-bottom: 1.5rem;
+      border-bottom: 1px solid var(--border-muted);
+      padding-bottom: 1rem;
+    }
+
+    .nav-list { list-style: none; }
+    .nav-item { margin-bottom: 0.35rem; }
+    .nav-link {
+      display: block;
+      padding: 0.4rem 0.6rem;
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.825rem;
+      border-radius: 6px;
+      transition: all 0.15s ease;
+    }
+    .nav-link:hover {
+      background-color: var(--bg-card);
+      color: var(--text-main);
+    }
+    .nav-link.active {
+      background-color: rgba(88, 166, 255, 0.15);
+      color: var(--accent-blue);
+      font-weight: 600;
+    }
+
+    /* Content Area */
+    .content {
+      flex: 1;
+      padding: 2.5rem 3.5rem;
+      max-width: 1100px;
+      overflow-x: hidden;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #161b22 0%, #21262d 100%);
+      border: 1px solid var(--border-muted);
+      border-radius: 12px;
+      padding: 2.5rem;
+      margin-bottom: 3rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 6px;
+      height: 100%;
+      background: linear-gradient(180deg, var(--accent-blue), var(--accent-purple));
+    }
+
+    .badge-pill {
+      display: inline-block;
+      padding: 0.2rem 0.6rem;
+      border-radius: 9999px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+      background: rgba(88, 166, 255, 0.15);
+      color: var(--accent-blue);
+      border: 1px solid rgba(88, 166, 255, 0.4);
+    }
+
+    h1 {
+      font-size: 2.25rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      margin-bottom: 0.75rem;
+      color: var(--text-main);
+    }
+
+    .hero-meta {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+    }
+
+    .section-title {
+      font-size: 1.6rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-top: 3rem;
+      margin-bottom: 1.25rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--border-muted);
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    h3 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-top: 1.75rem;
+      margin-bottom: 0.75rem;
+      color: #e6edf3;
+    }
+
+    p { margin-bottom: 1rem; color: #c9d1d9; font-size: 0.95rem; }
+
+    /* Callout Alert Boxes */
+    .callout {
+      background-color: var(--bg-subtle);
+      border: 1px solid var(--border-muted);
+      border-left: 4px solid var(--accent-blue);
+      border-radius: 6px;
+      padding: 1.25rem 1.5rem;
+      margin: 1.5rem 0;
+      font-size: 0.925rem;
+    }
+    .callout.alert-red {
+      border-left-color: var(--accent-red);
+      background-color: rgba(248, 81, 73, 0.08);
+      border-color: rgba(248, 81, 73, 0.3);
+    }
+    .callout.alert-green {
+      border-left-color: var(--accent-green);
+      background-color: rgba(63, 185, 80, 0.08);
+      border-color: rgba(63, 185, 80, 0.3);
+    }
+    .callout.alert-amber {
+      border-left-color: var(--accent-amber);
+      background-color: rgba(210, 153, 34, 0.08);
+      border-color: rgba(210, 153, 34, 0.3);
+    }
+    .callout-title {
+      font-weight: 700;
+      font-size: 0.95rem;
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    /* Tables */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.5rem 0;
+      font-size: 0.875rem;
+    }
+    th {
+      background-color: var(--bg-subtle);
+      color: var(--text-muted);
+      font-weight: 600;
+      text-align: left;
+      padding: 0.75rem 1rem;
+      border: 1px solid var(--border-muted);
+      text-transform: uppercase;
+      font-size: 0.75rem;
+      letter-spacing: 0.04em;
+    }
+    td {
+      padding: 0.85rem 1rem;
+      border: 1px solid var(--border-muted);
+      background-color: var(--bg-canvas);
+      vertical-align: top;
+    }
+    tr:hover td { background-color: var(--bg-subtle); }
+
+    /* Code Blocks */
+    pre {
+      background-color: #030712;
+      border: 1px solid var(--border-muted);
+      border-radius: 8px;
+      padding: 1.25rem;
+      overflow-x: auto;
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      line-height: 1.5;
+      margin: 1.25rem 0;
+      color: #e5e7eb;
+    }
+    code {
+      font-family: var(--font-mono);
+      font-size: 0.85em;
+      background-color: rgba(110, 118, 129, 0.2);
+      padding: 0.15rem 0.35rem;
+      border-radius: 4px;
+      color: var(--accent-blue);
+    }
+    pre code {
+      background: none;
+      padding: 0;
+      color: inherit;
+    }
+
+    /* Question Cards */
+    .qa-card {
+      background-color: var(--bg-subtle);
+      border: 1px solid var(--border-muted);
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      transition: border-color 0.2s ease;
+    }
+    .qa-card:hover {
+      border-color: var(--accent-blue);
+    }
+    .qa-question {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 0.75rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+    .qa-badge {
+      font-size: 0.7rem;
+      padding: 0.15rem 0.45rem;
+      border-radius: 4px;
+      font-weight: 700;
+      text-transform: uppercase;
+      background-color: #30363d;
+      color: #8b949e;
+      flex-shrink: 0;
+      margin-top: 0.2rem;
+    }
+    .qa-answer {
+      font-size: 0.925rem;
+      color: #c9d1d9;
+      border-left: 2px solid var(--border-muted);
+      padding-left: 1rem;
+      margin-top: 0.75rem;
+    }
+
+    /* Status Badges */
+    .tag {
+      display: inline-block;
+      padding: 0.15rem 0.5rem;
+      border-radius: 9999px;
+      font-size: 0.725rem;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    .tag-green { background: rgba(63, 185, 80, 0.15); color: #3fb950; border: 1px solid rgba(63, 185, 80, 0.4); }
+    .tag-red { background: rgba(248, 81, 73, 0.15); color: #f85149; border: 1px solid rgba(248, 81, 73, 0.4); }
+    .tag-amber { background: rgba(210, 153, 34, 0.15); color: #d29922; border: 1px solid rgba(210, 153, 34, 0.4); }
+    .tag-purple { background: rgba(188, 140, 255, 0.15); color: #bc8cff; border: 1px solid rgba(188, 140, 255, 0.4); }
+
+    /* Syntax Highlighting Fake Colors */
+    .kwd { color: #ff7b72; font-weight: bold; }
+    .str { color: #a5d6ff; }
+    .com { color: #8b949e; font-style: italic; }
+    .fn  { color: #d2a8ff; }
+    .num { color: #79c0ff; }
+  </style>
+</head>
+<body>
+
+  <!-- Left Sidebar -->
+  <aside class="sidebar">
+    <div class="sidebar-title">
+      <span>🏦</span> MUFG Candidate Playbook
+    </div>
+    <div class="sidebar-subtitle">FinOps-BatchGuard Masterclass</div>
+
+    <ul class="nav-list">
+      <li class="nav-item"><a href="#section-1" class="nav-link active">1. Executive Pitch & Banking Context</a></li>
+      <li class="nav-item"><a href="#elevator-pitch" class="nav-link" style="padding-left: 1.25rem;">• 30-Sec Elevator Pitch</a></li>
+      <li class="nav-item"><a href="#banking-glossary" class="nav-link" style="padding-left: 1.25rem;">• Banking Domain Glossary</a></li>
+      <li class="nav-item"><a href="#section-2" class="nav-link">2. Architecture & Enterprise Mapping</a></li>
+      <li class="nav-item"><a href="#control-m-mapping" class="nav-link" style="padding-left: 1.25rem;">• Control-M / JP1 Mapping</a></li>
+      <li class="nav-item"><a href="#section-3" class="nav-link">3. File & Function Walkthrough</a></li>
+      <li class="nav-item"><a href="#src-engine" class="nav-link" style="padding-left: 1.25rem;">• src/engine.py (DAG & SLA)</a></li>
+      <li class="nav-item"><a href="#src-incident" class="nav-link" style="padding-left: 1.25rem;">• src/incident_manager.py</a></li>
+      <li class="nav-item"><a href="#src-database" class="nav-link" style="padding-left: 1.25rem;">• src/database.py (WAL Store)</a></li>
+      <li class="nav-item"><a href="#src-housekeeping" class="nav-link" style="padding-left: 1.25rem;">• Unix Housekeeping Engine</a></li>
+      <li class="nav-item"><a href="#section-4" class="nav-link">4. The 3 Core Operational Rules</a></li>
+      <li class="nav-item"><a href="#section-5" class="nav-link">5. 15 "Grill Me" Interview Questions</a></li>
+      <li class="nav-item"><a href="#section-6" class="nav-link">6. Last-Minute Cheat Sheet</a></li>
+    </ul>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="content">
+
+    <div class="hero">
+      <div class="badge-pill">MUFG Bank • IT Operations Analyst Interview Prep</div>
+      <h1>FinOps-BatchGuard: Technical Masterclass</h1>
+      <div class="hero-meta">
+        <strong>Domain:</strong> Tier-1 Banking Operations • <strong>Scheduler:</strong> BMC Control-M / Hitachi JP1 Model • <strong>Standards:</strong> ITIL v4 Incident Management
+      </div>
+    </div>
+
+    <!-- SECTION 1 -->
+    <section id="section-1">
+      <h2 class="section-title">1. Executive Pitch & Banking Business Context (The "Why")</h2>
+      
+      <div id="elevator-pitch" class="callout alert-green">
+        <div class="callout-title">🎙️ 30-Second Elevator Pitch (Memorize this for "Tell me about your project"):</div>
+        <p><em>"I built <strong>FinOps-BatchGuard</strong>, an enterprise-grade batch execution, auto-recovery, and SLA alert engine modeled after Hitachi JP1 and BMC Control-M used in core banking operations. It orchestrates critical overnight batch workflows like SWIFT feed ingestion and EOD settlement. When transient database lock contention hits, it executes auto-retry with exponential backoff. When a hard deadlock occurs, it halts downstream regulatory reports to prevent corrupted ledger filings and leverages ITIL v4 rules to auto-generate structured ServiceNow incident tickets (<code>INC0010xxx</code>) with parent-child correlation—completely eliminating false P1 alert floods. Finally, it executes real Unix infrastructure health checks and automatically compiles an executive shift handover check-sheet in CSV and dark-themed HTML for the incoming morning operations team."</em></p>
+      </div>
+
+      <div class="callout">
+        <div class="callout-title">⏱️ 2-Minute Deep-Dive Walkthrough:</div>
+        <p>In a tier-1 financial institution like MUFG, overnight batch operations run between 22:00 and 06:00 to balance multi-currency books, settle transactions, and transmit statutory returns to central banks (MAS in Singapore, Federal Reserve in the US). In legacy operations, teams suffer from <strong>alert storms</strong> (when one upstream failure triggers dozens of downstream P1 alarms), <strong>transient false alarms</strong> (minor lock contention waking on-call teams), and <strong>unnoticed SLA breaches</strong> on recovered jobs.</p>
+        <p>FinOps-BatchGuard solves this through 4 integrated stages: pre-flight Unix system housekeeping (disk, memory, daemons), DAG dependency orchestration with retry backoff, ITIL v4 incident routing with automated parent-child correlation, and automated shift handover report generation.</p>
+      </div>
+
+      <h3 id="banking-glossary">Banking Domain Glossary: What the 4 Mock Jobs Actually Do</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Job ID & Name</th>
+            <th>Banking Domain Function</th>
+            <th>Technical Mechanism Under the Hood</th>
+            <th>BatchGuard Operational Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>JOB_01_FX_INGEST</code><br><strong>FX Swift Feed Ingestion</strong></td>
+            <td>Ingests external bank account statements and security portfolios before domestic trading books open.</td>
+            <td>Consumes <strong>SWIFT MT940</strong> (Customer Statement Message with opening/closing balances) and <strong>MT535</strong> (Statement of Holdings reporting equities/bonds). Validates SHA256 checksums and commits 14,820 records.</td>
+            <td><span class="tag tag-green">Success (Exit 0)</span><br>Executes in 0.63s on Attempt 1. Staging table loaded cleanly.</td>
+          </tr>
+          <tr>
+            <td><code>JOB_02_LEDGER_RECON</code><br><strong>General Ledger Recon</strong></td>
+            <td>Reconciles the bank's internal Chart of Accounts, verifying that all double-entry journal lines balance with zero variance.</td>
+            <td>Scans 48,290 journal lines across 12 branch entities: <code>Total Debits ($4.28B) == Total Credits ($4.28B)</code>.</td>
+            <td><span class="tag tag-amber">SLA Breach Warning</span><br>Fails on Attempt 1 due to <code>ORA-04021</code> lock contention. Auto-retries and recovers on Attempt 2. Total wall-clock time: <strong>3.20s</strong> (SLA: 1.5s). Triggers <code>INC0010405</code> (P2 SLA Warning).</td>
+          </tr>
+          <tr>
+            <td><code>JOB_03_EOD_SETTLEMENT</code><br><strong>EOD Settlement Engine</strong></td>
+            <td>Core settlement engine. Computes net cash settlements, posts interest accruals, and finalizes account balances.</td>
+            <td>Executes high-concurrency batch transactions on Oracle RAC across 23,400 accounts.</td>
+            <td><span class="tag tag-red">P1 Hard Failure</span><br>Encounters <code>ORA-00060: Deadlock detected</code> on table <code>T_SETTLEMENT_BATCH_MASTER</code>. All 3 retries fail (Exit 2). Triggers <code>INC0010404</code> (P1 Critical Major Incident) with Runbook <code>KB0041209</code>.</td>
+          </tr>
+          <tr>
+            <td><code>JOB_04_REG_REPORT</code><br><strong>Daily Regulatory Report</strong></td>
+            <td>Compiles statutory capital adequacy and liquidity coverage ratio (LCR) returns for central banks (<strong>MAS Notice 610 / Fed CCAR</strong>).</td>
+            <td>Generates cryptographically signed XBRL/XML regulatory packages. Must NEVER run against uncommitted, failed settlement data.</td>
+            <td><span class="tag tag-purple">Cascade Block</span><br>Safely halted without executing (<code>BLOCKED_BY_UPSTREAM</code>). Raises <code>INC0010406</code> (P3 Moderate) marked <code>On Hold</code> and linked as child to <code>INC0010404</code>.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- SECTION 2 -->
+    <section id="section-2">
+      <h2 class="section-title">2. End-to-End Architecture & Control-M / JP1 Enterprise Mapping</h2>
+      
+      <p>The orchestrator follows a strict 4-step pipeline executed via <code>python3 main.py --run-batch</code>:</p>
+      
+      <pre><code>[Step 1: Unix Housekeeping] ➔ [Step 2: Batch DAG Engine] ➔ [Step 3: ServiceNow ITIL Triage] ➔ [Step 4: Shift Handover Reports]
+     jobs/system_housekeeping.sh        src/engine.py                  src/incident_manager.py           src/checksheet_reporter.py
+     (Disk, Mem, Daemons, Spool)       (Topological DAG, Retry)       (P1/P2/P3 Deduplication)          (CSV & HTML Handover UI)</code></pre>
+
+      <h3 id="control-m-mapping">Enterprise Mapping Table: How BatchGuard Maps to MUFG Tools</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>FinOps-BatchGuard Code</th>
+            <th>BMC Control-M Equivalent</th>
+            <th>Hitachi JP1 Equivalent</th>
+            <th>CA AutoSys Equivalent</th>
+            <th>Enterprise Production Reality</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>config/batch_schedule.json</code></td>
+            <td>Job Definition XML / Smart Folder</td>
+            <td>Jobnet Definition / Group</td>
+            <td>JIL (Job Instruction Language) Script</td>
+            <td>Centralized schedule defining commands, cycles, agents, and parameters.</td>
+          </tr>
+          <tr>
+            <td><code>depends_on: ["JOB_01_FX_INGEST"]</code></td>
+            <td>IN-Conditions / OUT-Conditions</td>
+            <td>Preceding Job Execution Conditions</td>
+            <td><code>condition: success(JOB_01)</code></td>
+            <td>Enforces DAG dependency. Downstream jobs will not start until prerequisite flags post.</td>
+          </tr>
+          <tr>
+            <td><code>max_retries: 2</code>, <code>retry_delay_sec: 2</code></td>
+            <td>Rerun / Cyclic (<code>MAXRERUN=2</code>)</td>
+            <td>Auto-Retry Settings / Retry Interval</td>
+            <td><code>n_retrys: 2</code>, <code>retry_interval: 2</code></td>
+            <td>Automatically absorbs transient resource contention without waking human operators.</td>
+          </tr>
+          <tr>
+            <td><code>sla_max_duration_sec: 1.5</code></td>
+            <td>Control-M Batch Impact Manager (BIM)</td>
+            <td>JP1/AJS3 SLA Monitoring</td>
+            <td><code>term_run_time</code>, <code>alarm_if_fail</code></td>
+            <td>Monitors critical paths and sounds early warnings before regulatory deadlines breach.</td>
+          </tr>
+          <tr>
+            <td><code>src/incident_manager.py</code></td>
+            <td>Control-M Shout to ServiceNow Connector</td>
+            <td>JP1/IM Incident Forwarder</td>
+            <td>AutoSys Alarm to SNOW API Bridge</td>
+            <td>Translates raw process exit codes into ITIL v4 incidents with runbook SOP links.</td>
+          </tr>
+          <tr>
+            <td>Parent-Child Correlation</td>
+            <td>ServiceNow Alert Clustering</td>
+            <td>JP1 Root Cause Incident Grouping</td>
+            <td>ServiceNow Parent-Child Clustering</td>
+            <td>Prevents alert storms by linking blocked child tickets to the single root-cause P1 ticket.</td>
+          </tr>
+          <tr>
+            <td><code>Daily_Ops_CheckSheet_*.csv</code></td>
+            <td>Control-M Active Jobs Log</td>
+            <td>JP1 Daily Operation Check Sheet</td>
+            <td>EOD Operations Handover Log</td>
+            <td>Auditable shift handover artifact required by MAS and Fed IT compliance auditors.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- SECTION 3 -->
+    <section id="section-3">
+      <h2 class="section-title">3. File-by-File & Function-by-Function Code Walkthrough</h2>
+
+      <h3 id="src-engine"><code>src/engine.py</code>: Topological Sorting & Subprocess Execution</h3>
+      <p>Key function: <code>resolve_execution_order()</code> implements <strong>Kahn's algorithm</strong> for topological sorting to guarantee valid DAG execution:</p>
+      
+      <pre><code><span class="com"># In src/engine.py: Kahn's Algorithm for Topological Sort</span>
+<span class="kwd">def</span> <span class="fn">resolve_execution_order</span>(self) -> List[Dict[str, Any]]:
+    job_map = {job[<span class="str">"job_id"</span>]: job <span class="kwd">for</span> job <span class="kwd">in</span> self.jobs}
+    in_degree: Dict[str, int] = {job_id: <span class="num">0</span> <span class="kwd">for</span> job_id <span class="kwd">in</span> job_map}
+    adj_list: Dict[str, List[str]] = {job_id: [] <span class="kwd">for</span> job_id <span class="kwd">in</span> job_map}
+
+    <span class="kwd">for</span> job_id, job <span class="kwd">in</span> job_map.items():
+        <span class="kwd">for</span> upstream <span class="kwd">in</span> job.get(<span class="str">"depends_on"</span>, []):
+            adj_list[upstream].append(job_id)
+            in_degree[job_id] += <span class="num">1</span>
+
+    queue = [job_id <span class="kwd">for</span> job_id, deg <span class="kwd">in</span> in_degree.items() <span class="kwd">if</span> deg == <span class="num">0</span>]
+    ordered_ids = []
+
+    <span class="kwd">while</span> queue:
+        queue.sort()  <span class="com"># Guarantees deterministic order</span>
+        curr = queue.pop(<span class="num">0</span>)
+        ordered_ids.append(curr)
+
+        <span class="kwd">for</span> neighbor <span class="kwd">in</span> adj_list[curr]:
+            in_degree[neighbor] -= <span class="num">1</span>
+            <span class="kwd">if</span> in_degree[neighbor] == <span class="num">0</span>:
+                queue.append(neighbor)
+
+    <span class="kwd">if</span> len(ordered_ids) != len(job_map):
+        <span class="kwd">raise</span> ValueError(<span class="str">"Cyclic dependency detected in batch schedule configuration."</span>)
+    <span class="kwd">return</span> [job_map[jid] <span class="kwd">for</span> jid <span class="kwd">in</span> ordered_ids]</code></pre>
+
+      <p>Wall-clock duration measurement including retry delays in <code>src/engine.py</code>:</p>
+      <pre><code>job_overall_start_dt = datetime.now()
+<span class="com"># ... retry loop executes with time.sleep(retry_delay_sec) ...</span>
+job_overall_end_dt = datetime.now()
+total_duration_sec = (job_overall_end_dt - job_overall_start_dt).total_seconds()
+is_sla_breached = <span class="num">1</span> <span class="kwd">if</span> total_duration_sec > sla_max_duration_sec <span class="kwd">else</span> <span class="num">0</span></code></pre>
+
+      <h3 id="src-incident"><code>src/incident_manager.py</code>: ITIL Incident Triage & Correlation</h3>
+      <p>Key mechanism: Sorts runs so failures (parents) are created before child tickets, populating <code>parent_incident_map</code>:</p>
+      
+      <pre><code><span class="com"># In src/incident_manager.py: Priority Sorting for Parent-Child Correlation</span>
+<span class="kwd">def</span> <span class="fn">sort_priority</span>(r: Dict[str, Any]) -> int:
+    <span class="kwd">if</span> r[<span class="str">"status"</span>] == <span class="str">"FAILED"</span>:                <span class="kwd">return</span> <span class="num">0</span>  <span class="com"># Parent incident first</span>
+    <span class="kwd">if</span> r[<span class="str">"sla_breached"</span>] <span class="kwd">and</span> r[<span class="str">"status"</span>] == <span class="str">"SUCCESS"</span>: <span class="kwd">return</span> <span class="num">1</span>
+    <span class="kwd">if</span> r[<span class="str">"status"</span>] == <span class="str">"BLOCKED_BY_UPSTREAM"</span>:  <span class="kwd">return</span> <span class="num">2</span>  <span class="com"># Child tickets linked to parent</span>
+    <span class="kwd">return</span> <span class="num">3</span></code></pre>
+
+      <h3 id="src-database"><code>src/database.py</code>: SQLite WAL Store & Sequential Incident Numbers</h3>
+      <p>Sequential numbering logic ensuring zero duplicate incident numbers:</p>
+      <pre><code><span class="com"># In src/database.py: Extracting sequential number from INC0010xxx</span>
+cursor.execute(<span class="str">"SELECT MAX(CAST(SUBSTR(incident_number, 4) AS INTEGER)) FROM incidents WHERE incident_number LIKE 'INC%';"</span>)
+row = cursor.fetchone()
+max_num = row[<span class="num">0</span>] <span class="kwd">if</span> (row <span class="kwd">and</span> row[<span class="num">0</span>] <span class="kwd">is not None</span>) <span class="kwd">else</span> <span class="num">10400</span>
+next_num = max_num + <span class="num">1</span>
+<span class="kwd">return</span> f<span class="str">"INC{next_num:07d}"</span></code></pre>
+
+      <h3 id="src-housekeeping">Unix Infrastructure Health & Telemetry Parsing</h3>
+      <p>Exact bash commands used in <code>jobs/system_housekeeping.sh</code>:</p>
+      <pre><code><span class="com"># 1. Disk Usage on root partition (robust column-agnostic extraction)</span>
+DISK_INFO=$(df -h / | awk 'NR==2 {for(i=1;i<=NF;i++) if($i ~ /%/) {pct=$i; sub(/%/,"",pct); avail=$(i-1); print pct, avail}}')
+
+<span class="com"># 2. Available Memory via free -m</span>
+MEM_AVAIL=$(free -m | awk '/^Mem:/ {print $7}')
+
+<span class="com"># 3. CPU Load Average from kernel procfs</span>
+CPU_LOAD_1M=$(awk '{print $1}' /proc/loadavg)
+
+<span class="com"># 4. Zombie Process Count</span>
+ZOMBIE_COUNT=$(ps aux | awk '$8=="Z"' | wc -l)
+
+<span class="com"># 5. Stale Spool Purge</span>
+find "$SPOOL_DIR" -type f \( -name "*.tmp" -o -name "*.dat" -o -name "*.swp" \) -delete</code></pre>
+    </section>
+
+    <!-- SECTION 4 -->
+    <section id="section-4">
+      <h2 class="section-title">4. The 3 Core Operational ITIL Rules (Deep Dive)</h2>
+
+      <div class="callout alert-red">
+        <div class="callout-title">🚨 Rule A: Hard Failure ➔ P1 Major Incident Bridge</div>
+        <p><strong>Condition:</strong> <code>status == 'FAILED'</code> (e.g., <code>JOB_03_EOD_SETTLEMENT</code>, Exit Code 2).</p>
+        <p><strong>Action:</strong> Generates <code>INC0010404</code> (Priority: <code>P1 - Critical</code>, State: <code>Assigned</code>) assigned to <code>Core-Banking-DBA-L3</code>. PagerDuty alert triggers immediately. Stderr captures full Oracle deadlock logs (<code>ORA-00060</code>). Embeds Runbook <code>KB0041209</code>.</p>
+      </div>
+
+      <div class="callout alert-amber">
+        <div class="callout-title">⚠️ Rule B: Cascading Block ➔ Linked Child Ticket (No Alert Storms)</div>
+        <p><strong>Condition:</strong> <code>status == 'BLOCKED_BY_UPSTREAM'</code> (e.g., <code>JOB_04_REG_REPORT</code>).</p>
+        <p><strong>Action:</strong> Generates <code>INC0010406</code> (Priority: <code>P3 - Moderate</code>, State: <code>On Hold - Awaiting Upstream</code>) assigned to <code>Regulatory-Reporting-L2</code>. Sets <code>parent_incident = INC0010404</code>. Suppresses false alarms: the Regulatory team is informed but not paged into a bridge while the DBA team works on the root failure.</p>
+      </div>
+
+      <div class="callout alert-green">
+        <div class="callout-title">⏱️ Rule C: Recovered Job with SLA Breach ➔ P2 SLA Warning</div>
+        <p><strong>Condition:</strong> <code>status == 'SUCCESS' and sla_breached == 1</code> (e.g., <code>JOB_02_LEDGER_RECON</code>).</p>
+        <p><strong>Action:</strong> Generates <code>INC0010405</code> (Priority: <code>P2 - High</code>, State: <code>New</code>) assigned to <code>FinControl-GL-Support-L2</code>. Notes that while the ledger balanced on Attempt 2, the 3.20s duration exceeded the 1.5s SLA window due to transient lock contention, logging a daytime tuning ticket.</p>
+      </div>
+    </section>
+
+    <!-- SECTION 5 -->
+    <section id="section-5">
+      <h2 class="section-title">5. 15 Tough Interview Cross-Questions & Model Answers ("Grill Me")</h2>
+
+      <!-- Q1 -->
+      <div class="qa-card">
+        <div class="qa-question"><span class="qa-badge">Algorithms</span> 1. What happens if an engineer introduces a circular dependency in <code>batch_schedule.json</code>?</div>
+        <div class="qa-answer">Our engine implements Kahn’s algorithm for topological sorting in <code>src/engine.py</code>. It maintains an in-degree map of all dependencies. In a circular dependency, cycle nodes never hit an in-degree of zero and never enter the queue. The engine checks <code>if len(ordered_ids) != len(job_map)</code>; if they don't match, it aborts immediately with a <code>ValueError</code> before executing any subprocesses, preventing infinite loops or race conditions.</div>
+      </div>
+
+      <!-- Q2 -->
+      <div class="qa-card">
+        <div class="qa-question"><span class="qa-badge">Database</span> 2. Why did you use SQLite with WAL mode instead of PostgreSQL?</div>
+        <div class="qa-answer">For an on-host batch orchestrator agent (like Control-M Agent or JP1/Agent), local lightweight persistence eliminates network failure risks: if the network or central database goes down, the orchestrator must still record process execution and audit states. Standard SQLite locks the database file during writes; by enabling Write-Ahead Logging (<code>PRAGMA journal_mode = WAL</code>), readers never block writers and writers never block readers, giving high-concurrency ACID persistence with zero server overhead.</div>
+      </div>
+
+      <!-- Q3 -->
+      <div class="qa-card">
+        <div class="qa-question"><span class="qa-badge">Reliability</span> 3. How does your orchestrator handle a process that hangs indefinitely?</div>
+        <div class="qa-answer">In production, we pass a timeout parameter to <code>subprocess.run(..., timeout=timeout_sec)</code>. If the job hangs (e.g. frozen network socket), Python raises <code>subprocess.TimeoutExpired</code>. We catch this exception, call <code>proc.kill()</code>, record the status as <code>FAILED</code> with a timeout error, and generate an immediate P1 incident alerting the operations bridge.</div>
+      </div>
+
+      <!-- Q4 -->
+      <div class="qa-card">
+        <div class="qa-question"><span class="qa-badge">Performance</span> 4. Why did you measure wall-clock time instead of CPU execution time for SLAs?</div>
+        <div class="qa-answer">In banking operations, regulatory and settlement deadlines depend on clock time, not CPU execution time. If a job runs for 0.5s, fails, sleeps for 2 minutes on backoff, and runs for 0.5s on retry, CPU time is 1.0s. That looks healthy, but in reality, it delayed the core banking pipeline by over 2 minutes. By computing <code>job_overall_end_dt - job_overall_start_dt</code>, we measure the true latency experienced by the bank.</div>
+      </div>
+
+      <!-- Q5 -->
+      <div class="qa-card">
+        <div class="qa-question"><span class="qa-badge">Testing</span> 5. How does <code>job_02_ledger_recon.py</code> detect attempts idempotently?</div>
+        <div class="qa-answer">We implemented dual-mode attempt detection. When run by the orchestrator, it injects <code>BATCH_ATTEMPT</code> into the subprocess environment. The script checks <code>os.environ.get("BATCH_ATTEMPT")</code>. If <code>"1"</code>, it fails with lock contention; if <code>"2"</code>, it reconciles and exits 0. If executed standalone from the terminal, it falls back to a persistent JSON state file in <code>data/.job_02_recon_state.json</code>, unlinking it upon successful recovery.</div>
+      </div>
+
+      <!-- Q6 -->
+      <div class="qa-card">
+        <div class="qa-question"><span class="qa-badge">Unix OS</span> 6. Walk me through the Unix commands in <code>system_housekeeping.sh</code>.</div>
+        <div class="qa-answer">We query disk space with <code>df -h /</code> using an <code>awk</code> loop to find the field containing <code>%</code>, ensuring resilience against shifting column formatting across Linux environments. We extract memory from <code>free -m</code> using available memory (column 7) rather than raw free memory to account for buffer/cache. We read CPU load from <code>/proc/loadavg</code> for kernel-level speed, and count zombies using <code>ps aux | awk '$8=="Z"' | wc -l</code>.</div>
+      </div>
+
+      <!-- Q7 -->
+      <div class="qa-card">
+        <div class="qa-question"><span class="qa-badge">Incident</span> 7. If `/var/log` hits 94% disk usage before the EOD batch, what do you do?</div>
+        <div class="qa-answer">First, run <code>df -h</code> to confirm the mount point. Second, run <code>du -ahx /var/log | sort -rh | head -20</code> to find the largest runaway log files. Third, run <code>lsof +L1 /var/log</code> to check for deleted files still held open by un-bounced processes. Fourth, compress historical logs older than 7 days using <code>find /var/log -type f -name "*.log" -mtime +7 -exec gzip {} \;</code> or truncate active runaway logs using <code>> filename.log</code>. If space is still critical, escalate immediately to the Linux infrastructure team to extend the LVM logical volume before the batch starts.</div>
+      </div>
+
+      <!-- Q8 -->
+      <div class="qa-card">
+        <div class="qa-question"><span class="qa-badge">Unix OS</span> 8. What are zombie processes and how do you kill them?</div>
+        <div class="qa-answer">A zombie process (code <code>Z</code> in <code>ps aux</code>) has finished execution but still occupies a slot in the OS process table because its parent has not called <code>wait()</code>. Because zombies are already dead, <code>kill -9 &lt;pid&gt;</code> does nothing. You must find the parent using <code>ps -o ppid= -p &lt;zombie_pid&gt;</code> and send a <code>SIGCHLD</code> signal (<code>kill -s SIGCHLD &lt;ppid&gt;</code>). If the parent is hung, bouncing the parent causes <code>init</code> (PID 1) to adopt the zombie and reap it.</div>
+      </div>
+
+      <!-- Q9 -->
+      <div class="qa-card">
+        <div class="qa-question"><span class="qa-badge">Architecture</span> 9. Why check mock daemons like `controlm-agent` and `swift-mq-listener`?</div>
+        <div class="qa-answer">In banking batch operations, scripts depend on external middleware. The Control-M agent (port 7005) receives job instructions from the central scheduler, the SWIFT MQ listener connects to IBM WebSphere MQ channels for foreign exchange messages, and the AS400 bridge links to legacy ledger mainframes. Validating active PIDs and ports during pre-flight checks ensures middleware connectivity before initiating high-value settlement.</div>
+      </div>
+
+      <!-- Q10 -->
+      <div class="qa-card">
+        <div class="qa-question"><span class="qa-badge">Operations</span> 10. How do you prevent `logs/batch_engine.log` from filling the disk?</div>
+        <div class="qa-answer">In Python, we configure <code>logging.handlers.RotatingFileHandler(maxBytes=50*1024*1024, backupCount=10)</code> to retain 10 historical 50MB log segments. At the OS level, we configure standard Linux <code>logrotate</code> in <code>/etc/logrotate.d/batchguard</code> with <code>daily</code>, <code>rotate 30</code>, <code>compress</code>, and <code>copytruncate</code>.</div>
+      </div>
+
+      <!-- Q11 -->
+      <div class="qa-card">
+        <div class="qa-question"><span class="qa-badge">Banking</span> 11. Why didn't you auto-retry `JOB_04_REG_REPORT` when it was blocked?</div>
+        <div class="qa-answer"><code>JOB_04</code> did not fail due to a transient software error; it was halted because upstream EOD settlement suffered an unrecoverable deadlock. In banking, submitting statutory reports (MAS Notice 610, Fed CCAR) against unposted or corrupted ledger data leads to severe regulatory sanctions. Retrying <code>JOB_04</code> before settlement is resolved would either fail or submit invalid numbers.</div>
+      </div>
+
+      <!-- Q12 -->
+      <div class="qa-card">
+        <div class="qa-question"><span class="qa-badge">Operations</span> 12. If `JOB_03` is fixed by DBAs at 3:15 AM, how do you resume without re-running `JOB_01` and `JOB_02`?</div>
+        <div class="qa-answer">In Control-M or JP1, an operator performs a 'Force Rerun from Failed Job'. In our engine, we support a resume flag: <code>python3 main.py --resume-batch &lt;run_id&gt;</code>. The orchestrator inspects SQLite, verifies that `JOB_01` and `JOB_02` have status `SUCCESS`, bypasses them, and restarts execution directly at `JOB_03`. Once `JOB_03` succeeds, `JOB_04` is automatically unlocked and executed.</div>
+      </div>
+
+      <!-- Q13 -->
+      <div class="qa-card">
+        <div class="qa-question"><span class="qa-badge">ITIL</span> 13. How does parent-child correlation prevent an Alert Storm?</div>
+        <div class="qa-answer">When a core database job fails, dozens of downstream jobs fail or block. If each creates a standalone P1 alert, 30 bridges are paged, creating chaos in the Command Center. Our engine creates one master P1 incident for `JOB_03` (the root cause) and links downstream blocked jobs as child tickets (priority P3, state 'On Hold - Awaiting Upstream'). The operations team focuses on 1 primary incident bridge instead of 30 duplicate alarms.</div>
+      </div>
+
+      <!-- Q14 -->
+      <div class="qa-card">
+        <div class="qa-question"><span class="qa-badge">ITIL</span> 14. Why generate a P2 incident for `JOB_02` if it ended with Exit Code 0?</div>
+        <div class="qa-answer">Because functional success does not equal SLA compliance. `JOB_02` succeeded on Attempt 2, but its duration was 3.20s against a 1.5s SLA window. If multiple jobs experience retry delays, the cumulative lag pushes EOD settlement past domestic clearing cut-offs. Raising a P2 ticket alerts the GL support team during normal business hours to investigate lock contention on <code>GL_BALANCES_STG</code>, preventing future production delays.</div>
+      </div>
+
+      <!-- Q15 -->
+      <div class="qa-card">
+        <div class="qa-question"><span class="qa-badge">Audit</span> 15. How does this shift handover report satisfy MAS and Fed audit requirements?</div>
+        <div class="qa-answer">MAS Technology Risk Management Guidelines and Federal Reserve standards require strict event logging and formal operational handovers. Our engine produces an immutable digital record: pre-batch OS health telemetry, job execution attempt durations and exit codes, cross-referenced ServiceNow ticket numbers, and digital sign-off blocks from outgoing and incoming shift analysts. This replaces error-prone manual shift notes with an auditable automated artifact.</div>
+      </div>
+    </section>
+
+    <!-- SECTION 6 -->
+    <section id="section-6">
+      <h2 class="section-title">6. Quick-Reference Cheat Sheet (1-Page Last-Minute Review)</h2>
+
+      <h3>1. Job Execution Matrix</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Job ID</th>
+            <th>Script</th>
+            <th>Exit Code</th>
+            <th>Final Status</th>
+            <th>SLA Limit</th>
+            <th>Actual Duration</th>
+            <th>SLA Breach</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>JOB_01_FX_INGEST</code></td>
+            <td><code>job_01_fx_ingest.sh</code></td>
+            <td><code>0</code></td>
+            <td><span class="tag tag-green">SUCCESS</span></td>
+            <td>5.0s</td>
+            <td>0.63s</td>
+            <td>NO (Compliant)</td>
+          </tr>
+          <tr>
+            <td><code>JOB_02_LEDGER_RECON</code></td>
+            <td><code>job_02_ledger_recon.py</code></td>
+            <td><code>0</code> (Att 2)</td>
+            <td><span class="tag tag-green">SUCCESS</span></td>
+            <td>1.5s</td>
+            <td>3.20s</td>
+            <td><span class="tag tag-amber">YES (BREACH)</span></td>
+          </tr>
+          <tr>
+            <td><code>JOB_03_EOD_SETTLEMENT</code></td>
+            <td><code>job_03_eod_settlement.sh</code></td>
+            <td><code>2</code> (Att 3)</td>
+            <td><span class="tag tag-red">FAILED</span></td>
+            <td>10.0s</td>
+            <td>5.68s</td>
+            <td>NO (Failed)</td>
+          </tr>
+          <tr>
+            <td><code>JOB_04_REG_REPORT</code></td>
+            <td><code>job_04_reg_report.sh</code></td>
+            <td>-</td>
+            <td><span class="tag tag-purple">BLOCKED</span></td>
+            <td>10.0s</td>
+            <td>0.00s</td>
+            <td>NO (Bypassed)</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>2. ServiceNow Incident Matrix</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Incident Number</th>
+            <th>Target Job</th>
+            <th>Type</th>
+            <th>Priority</th>
+            <th>State</th>
+            <th>Assignment Group</th>
+            <th>Runbook ID</th>
+            <th>Parent Link</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>INC0010404</code></td>
+            <td><code>JOB_03_EOD_SETTLEMENT</code></td>
+            <td><code>HARD_FAILURE</code></td>
+            <td><span class="tag tag-red">P1 - Critical</span></td>
+            <td>Assigned</td>
+            <td><code>Core-Banking-DBA-L3</code></td>
+            <td><code>KB0041209</code></td>
+            <td><em>None (Root)</em></td>
+          </tr>
+          <tr>
+            <td><code>INC0010405</code></td>
+            <td><code>JOB_02_LEDGER_RECON</code></td>
+            <td><code>SLA_BREACH_WARNING</code></td>
+            <td><span class="tag tag-amber">P2 - High</span></td>
+            <td>New</td>
+            <td><code>FinControl-GL-Support-L2</code></td>
+            <td><code>KB0038912</code></td>
+            <td><em>None (Perf)</em></td>
+          </tr>
+          <tr>
+            <td><code>INC0010406</code></td>
+            <td><code>JOB_04_REG_REPORT</code></td>
+            <td><code>UPSTREAM_DEPENDENCY_BLOCK</code></td>
+            <td><span class="tag tag-purple">P3 - Moderate</span></td>
+            <td>On Hold</td>
+            <td><code>Regulatory-Reporting-L2</code></td>
+            <td><code>KB0019230</code></td>
+            <td><code>INC0010404</code></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>3. Essential CLI Commands to Know</h3>
+      <pre><code><span class="com"># Execute complete 4-step pipeline: Housekeeping -> DAG Batch -> Incident Triage -> Reports</span>
+python3 main.py --run-batch
+
+<span class="com"># Query all 4 SQLite operational tables (job_runs, attempts, incidents, housekeeping)</span>
+python3 main.py --show-db
+
+<span class="com"># View generated shift handover reports</span>
+cat reports/Daily_Ops_CheckSheet_*.csv
+google-chrome reports/Shift_Handover_Dashboard_*.html
+
+<span class="com"># Inspect exported ServiceNow Table API JSON payload</span>
+cat data/servicenow_outbox/INC0010404.json</code></pre>
+    </section>
+
+  </main>
+</body>
+</html>
+

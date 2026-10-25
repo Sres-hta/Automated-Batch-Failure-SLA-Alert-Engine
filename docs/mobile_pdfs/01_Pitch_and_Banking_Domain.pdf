@@ -1,0 +1,228 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [9 0 R 11 0 R 13 0 R] /Count 3 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Oblique >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier >>
+endobj
+7 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier-Bold >>
+endobj
+8 0 obj
+<< /Length 3365 >>
+stream
+0.58 0.64 0.72 RG 0.5 w
+24.0 556.0 m 300.0 556.0 l S
+BT /F1 7.5 Tf 0.45 0.52 0.60 rg 24.0 560.0 Td (MUFG Masterclass * 01 Pitch & Banking Domain) Tj ET
+0.07 0.13 0.24 rg 24.0 466.0 276.0 68.0 re f
+0.12 0.24 0.45 RG 1 w 24.0 466.0 276.0 68.0 re s
+0.89 0.18 0.18 rg 24.0 466.0 4 68.0 re f
+BT /F2 7.5 Tf 0.35 0.65 0.95 rg 36.0 518.0 Td (MUFG IT OPS CANDIDATE GUIDE) Tj ET
+BT /F2 13 Tf 0.98 0.98 1.0 rg 36.0 500.0 Td (Banking Domain & Pitch) Tj ET
+BT /F1 8.5 Tf 0.70 0.78 0.88 rg 36.0 484.0 Td (Core Banking Batch Architecture) Tj ET
+0.80 0.84 0.90 RG 0.75 w 24.0 438.0 m 300.0 438.0 l S
+BT /F2 13.5 Tf 0.08 0.15 0.30 rg 24.0 442.0 Td (1. Executive Pitch Playbook) Tj ET
+0.97 0.95 0.99 rg 24.0 273.0 276.0 151.0 re f
+0.88 0.80 0.95 RG 0.75 w 24.0 273.0 276.0 151.0 re s
+0.55 0.20 0.85 rg 24.0 273.0 3.5 151.0 re f
+BT /F2 9.5 Tf 0.40 0.10 0.65 rg 34.0 411.0 Td (30-SECOND ELEVATOR PITCH \(MEMORIZE\):) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 399.0 Td (I built FinOps-BatchGuard, an enterprise batch) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 386.5 Td (execution, auto-recovery, and SLA alert engine) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 374.0 Td (modeled after Control-M and JP1 used at banks) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 361.5 Td (like MUFG. It orchestrates overnight SWIFT) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 349.0 Td (feeds and settlement, auto-retries transient) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 336.5 Td (database lock timeouts, suppresses cascading) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 324.0 Td (false P1 alarms on dependent reporting jobs,) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 311.5 Td (auto-generates ServiceNow tickets with parent-) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 299.0 Td (child links, and publishes automated shift) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 286.5 Td (handover dashboards.) Tj ET
+BT /F1 10.0 Tf 0.20 0.24 0.30 rg 24.0 265.0 Td (In a global corporate and investment bank like) Tj ET
+BT /F1 10.0 Tf 0.20 0.24 0.30 rg 24.0 251.5 Td (MUFG, batch operations represent the vital) Tj ET
+BT /F1 10.0 Tf 0.20 0.24 0.30 rg 24.0 238.0 Td (heartbeat of financial stability. Between 22:00) Tj ET
+BT /F1 10.0 Tf 0.20 0.24 0.30 rg 24.0 224.5 Td (and 06:00, hundreds of mission-critical jobs) Tj ET
+BT /F1 10.0 Tf 0.20 0.24 0.30 rg 24.0 211.0 Td (execute in strict sequential dependency.) Tj ET
+0.95 0.99 0.95 rg 24.0 105.0 276.0 88.5 re f
+0.80 0.95 0.80 RG 0.75 w 24.0 105.0 276.0 88.5 re s
+0.15 0.65 0.25 rg 24.0 105.0 3.5 88.5 re f
+BT /F2 9.5 Tf 0.10 0.50 0.15 rg 34.0 180.5 Td (KEY TAKEAWAY FOR INTERVIEWERS:) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 168.5 Td (Banks do not fail because code is poorly) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 156.0 Td (written; banks fail because operational failure) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 143.5 Td (modes \(locks, deadlocks, race conditions\) are) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 131.0 Td (not isolated, leading to cascading alert storms) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 118.5 Td (that overwhelm the Command Center.) Tj ET
+0.80 0.84 0.90 RG 0.75 w 24.0 85.0 m 300.0 85.0 l S
+BT /F2 13.5 Tf 0.08 0.15 0.30 rg 24.0 89.0 Td (2. The 4 Mock Banking Jobs) Tj ET
+0.58 0.64 0.72 RG 0.5 w 24.0 38.0 m 300.0 38.0 l S
+BT /F1 7.5 Tf 0.45 0.52 0.60 rg 24.0 29.0 Td (Page 1 of 3 * FinOps-BatchGuard MUFG Prep) Tj ET
+endstream
+endobj
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 324.0 576.0] /Contents 8 0 R /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R /F4 6 0 R /F5 7 0 R >> /ProcSet [/PDF /Text] >> >>
+endobj
+10 0 obj
+<< /Length 4170 >>
+stream
+0.58 0.64 0.72 RG 0.5 w
+24.0 556.0 m 300.0 556.0 l S
+BT /F1 7.5 Tf 0.45 0.52 0.60 rg 24.0 560.0 Td (MUFG Masterclass * 01 Pitch & Banking Domain) Tj ET
+0.97 0.98 0.99 rg 24.0 403.0 276.0 131.0 re f
+0.82 0.86 0.90 RG 0.75 w 24.0 403.0 276.0 131.0 re s
+0.92 0.94 0.97 rg 24.0 516.0 276.0 18 re f
+BT /F2 9.0 Tf 0.10 0.18 0.35 rg 32.0 522.0 Td (JOB 01: FX Swift Feed Ingestion) Tj ET
+BT /F2 8.0 Tf 0.85 0.15 0.15 rg 225.0 522.0 Td (SUCCESS \(0\)) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 504.0 Td (Script:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 504.0 Td (jobs/job_01_fx_ingest.sh) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 489.0 Td (Domain:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 489.0 Td (Foreign Exchange & Trade Services) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 474.0 Td (SWIFT MT940:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 474.0 Td (Customer Statement \(End-of-day balances\)) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 459.0 Td (SWIFT MT535:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 459.0 Td (Statement of Holdings \(Custody portfolios\)) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 444.0 Td (Volume:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 444.0 Td (14,820 FX payment messages staged) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 429.0 Td (Checksum:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 429.0 Td (SHA256 hash match against header) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 414.0 Td (Exit Code:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 414.0 Td (0 \(SUCCESS on Attempt 1, ~0.63s\)) Tj ET
+BT /F1 10.0 Tf 0.20 0.24 0.30 rg 24.0 395.0 Td (Why SWIFT matters: Before domestic clearing houses) Tj ET
+BT /F1 10.0 Tf 0.20 0.24 0.30 rg 24.0 381.5 Td (open, external bank account statements \(MT940\) and) Tj ET
+BT /F1 10.0 Tf 0.20 0.24 0.30 rg 24.0 368.0 Td (security holdings \(MT535\) must be parsed and) Tj ET
+BT /F1 10.0 Tf 0.20 0.24 0.30 rg 24.0 354.5 Td (staged into STG_SWIFT_FX_TRANSACTIONS so cash) Tj ET
+BT /F1 10.0 Tf 0.20 0.24 0.30 rg 24.0 341.0 Td (balancing can commence.) Tj ET
+0.97 0.98 0.99 rg 24.0 177.5 276.0 146.0 re f
+0.82 0.86 0.90 RG 0.75 w 24.0 177.5 276.0 146.0 re s
+0.92 0.94 0.97 rg 24.0 305.5 276.0 18 re f
+BT /F2 9.0 Tf 0.10 0.18 0.35 rg 32.0 311.5 Td (JOB 02: General Ledger Reconciliation) Tj ET
+BT /F2 8.0 Tf 0.85 0.15 0.15 rg 225.0 311.5 Td (SLA BREACH) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 293.5 Td (Script:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 293.5 Td (jobs/job_02_ledger_recon.py) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 278.5 Td (Domain:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 278.5 Td (Financial Accounting & Control) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 263.5 Td (Function:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 263.5 Td (Balances Chart of Accounts lines) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 248.5 Td (Verification:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 248.5 Td (Total Debits == Total Credits \($4.28B\)) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 233.5 Td (Failure:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 233.5 Td (Attempt 1: ORA-04021 lock timeout) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 218.5 Td (Recovery:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 218.5 Td (Attempt 2: Auto-retry succeeds) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 203.5 Td (SLA Window:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 203.5 Td (1.50s threshold \(Wall-Clock: 3.20s\)) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 188.5 Td (SLA State:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 188.5 Td (SLA BREACH \(Triggers P2 Warning\)) Tj ET
+BT /F1 10.0 Tf 0.20 0.24 0.30 rg 24.0 169.5 Td (Why transient locks happen: High-volume ETL) Tj ET
+BT /F1 10.0 Tf 0.20 0.24 0.30 rg 24.0 156.0 Td (loaders frequently lock database library objects) Tj ET
+BT /F1 10.0 Tf 0.20 0.24 0.30 rg 24.0 142.5 Td (during partition swaps. BatchGuard avoids waking) Tj ET
+BT /F1 10.0 Tf 0.20 0.24 0.30 rg 24.0 129.0 Td (on-call DBAs by executing an automatic backoff) Tj ET
+BT /F1 10.0 Tf 0.20 0.24 0.30 rg 24.0 115.5 Td (retry.) Tj ET
+0.58 0.64 0.72 RG 0.5 w 24.0 38.0 m 300.0 38.0 l S
+BT /F1 7.5 Tf 0.45 0.52 0.60 rg 24.0 29.0 Td (Page 2 of 3 * FinOps-BatchGuard MUFG Prep) Tj ET
+endstream
+endobj
+11 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 324.0 576.0] /Contents 10 0 R /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R /F4 6 0 R /F5 7 0 R >> /ProcSet [/PDF /Text] >> >>
+endobj
+12 0 obj
+<< /Length 4639 >>
+stream
+0.58 0.64 0.72 RG 0.5 w
+24.0 556.0 m 300.0 556.0 l S
+BT /F1 7.5 Tf 0.45 0.52 0.60 rg 24.0 560.0 Td (MUFG Masterclass * 01 Pitch & Banking Domain) Tj ET
+0.97 0.98 0.99 rg 24.0 388.0 276.0 146.0 re f
+0.82 0.86 0.90 RG 0.75 w 24.0 388.0 276.0 146.0 re s
+0.92 0.94 0.97 rg 24.0 516.0 276.0 18 re f
+BT /F2 9.0 Tf 0.10 0.18 0.35 rg 32.0 522.0 Td (JOB 03: End-of-Day Settlement Engine) Tj ET
+BT /F2 8.0 Tf 0.85 0.15 0.15 rg 225.0 522.0 Td (FAILED \(2\)) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 504.0 Td (Script:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 504.0 Td (jobs/job_03_eod_settlement.sh) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 489.0 Td (Domain:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 489.0 Td (Core Banking Settlement Core) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 474.0 Td (Function:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 474.0 Td (Multi-currency net cash settlements) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 459.0 Td (Accounts:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 459.0 Td (23,400 corporate accounts committed) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 444.0 Td (Root Failure:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 444.0 Td (ORA-00060 Deadlock on T_SETTLEMENT) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 429.0 Td (Retries:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 429.0 Td (Exhausts all 3 attempts \(Exit Code 2\)) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 414.0 Td (Incident:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 414.0 Td (INC0010404 \(P1 Major Incident Bridge\)) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 399.0 Td (Runbook:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 399.0 Td (KB0041209 \(Oracle RAC Escalation\)) Tj ET
+BT /F1 10.0 Tf 0.20 0.24 0.30 rg 24.0 380.0 Td (Why ORA-00060 is a Hard Failure: Two concurrent) Tj ET
+BT /F1 10.0 Tf 0.20 0.24 0.30 rg 24.0 366.5 Td (batch sessions locked resources in reverse order.) Tj ET
+BT /F1 10.0 Tf 0.20 0.24 0.30 rg 24.0 353.0 Td (In Oracle RAC, deadlocks cannot self-heal without) Tj ET
+BT /F1 10.0 Tf 0.20 0.24 0.30 rg 24.0 339.5 Td (terminating one transaction \(SQLSTATE 40001\).) Tj ET
+BT /F1 10.0 Tf 0.20 0.24 0.30 rg 24.0 326.0 Td (Retrying without clearing the orphan session will) Tj ET
+BT /F1 10.0 Tf 0.20 0.24 0.30 rg 24.0 312.5 Td (fail every time.) Tj ET
+0.97 0.98 0.99 rg 24.0 149.0 276.0 146.0 re f
+0.82 0.86 0.90 RG 0.75 w 24.0 149.0 276.0 146.0 re s
+0.92 0.94 0.97 rg 24.0 277.0 276.0 18 re f
+BT /F2 9.0 Tf 0.10 0.18 0.35 rg 32.0 283.0 Td (JOB 04: Daily Regulatory MAS/Fed Report) Tj ET
+BT /F2 8.0 Tf 0.85 0.15 0.15 rg 225.0 283.0 Td (BLOCKED) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 265.0 Td (Script:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 265.0 Td (jobs/job_04_reg_report.sh) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 250.0 Td (Domain:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 250.0 Td (Statutory Risk & Compliance) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 235.0 Td (MAS 610:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 235.0 Td (Monetary Authority of Singapore Return) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 220.0 Td (Fed CCAR:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 220.0 Td (Federal Reserve Daily Capital Summary) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 205.0 Td (Status:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 205.0 Td (BLOCKED_BY_UPSTREAM \(Not Executed\)) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 190.0 Td (Incident:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 190.0 Td (INC0010406 \(P3 Linked Child Ticket\)) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 175.0 Td (Parent Ref:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 175.0 Td (Correlated to INC0010404) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 160.0 Td (State:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 160.0 Td (On Hold - Awaiting Upstream) Tj ET
+0.99 0.95 0.95 rg 24.0 52.5 276.0 88.5 re f
+0.95 0.80 0.80 RG 0.75 w 24.0 52.5 276.0 88.5 re s
+0.89 0.18 0.18 rg 24.0 52.5 3.5 88.5 re f
+BT /F2 9.5 Tf 0.70 0.10 0.10 rg 34.0 128.0 Td (CRITICAL COMPLIANCE PRINCIPLE:) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 116.0 Td (Never run statutory regulatory reports against) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 103.5 Td (failed or unposted EOD settlement ledgers.) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 91.0 Td (Submitting incorrect capital returns to central) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 78.5 Td (banks results in regulatory censure, public) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 66.0 Td (enforcement notices, and statutory fines.) Tj ET
+0.58 0.64 0.72 RG 0.5 w 24.0 38.0 m 300.0 38.0 l S
+BT /F1 7.5 Tf 0.45 0.52 0.60 rg 24.0 29.0 Td (Page 3 of 3 * FinOps-BatchGuard MUFG Prep) Tj ET
+endstream
+endobj
+13 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 324.0 576.0] /Contents 12 0 R /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R /F4 6 0 R /F5 7 0 R >> /ProcSet [/PDF /Text] >> >>
+endobj
+xref
+0 14
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000135 00000 n 
+0000000205 00000 n 
+0000000280 00000 n 
+0000000358 00000 n 
+0000000426 00000 n 
+0000000499 00000 n 
+0000003915 00000 n 
+0000004107 00000 n 
+0000008329 00000 n 
+0000008523 00000 n 
+0000013214 00000 n 
+trailer
+<< /Size 14 /Root 1 0 R >>
+startxref
+13408
+%%EOF

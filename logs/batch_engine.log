@@ -1,0 +1,151 @@
+2026-10-14 17:02:39 | INFO    | batch_engine | Loaded schedule 'Overnight Core Banking EOD Settlement & Reporting' with 4 jobs.
+2026-10-14 17:02:39 | INFO    | batch_engine | ================================================================================
+2026-10-14 17:02:39 | INFO    | batch_engine | STARTING BATCH RUN: RUN-20261014-170239 | DATE: 2026-10-14
+2026-10-14 17:02:39 | INFO    | batch_engine | Schedule: Overnight Core Banking EOD Settlement & Reporting
+2026-10-14 17:02:39 | INFO    | batch_engine | Resolved Execution Order: JOB_01_FX_INGEST -> JOB_02_LEDGER_RECON -> JOB_03_EOD_SETTLEMENT -> JOB_04_REG_REPORT
+2026-10-14 17:02:39 | INFO    | batch_engine | ================================================================================
+2026-10-14 17:02:39 | INFO    | batch_engine | ------------------------------------------------------------
+2026-10-14 17:02:39 | INFO    | batch_engine | EVALUATING JOB: [JOB_01_FX_INGEST] - FX Swift Feed Ingestion (P2)
+2026-10-14 17:02:39 | INFO    | batch_engine | Executing [JOB_01_FX_INGEST] attempt 1/3 via 'jobs/job_01_fx_ingest.sh'...
+2026-10-14 17:02:40 | INFO    | batch_engine | [SUCCESS] Job [JOB_01_FX_INGEST] succeeded on attempt 1 (duration: 0.62s).
+2026-10-14 17:02:40 | INFO    | batch_engine | ------------------------------------------------------------
+2026-10-14 17:02:40 | INFO    | batch_engine | EVALUATING JOB: [JOB_02_LEDGER_RECON] - General Ledger Reconciliation (P1)
+2026-10-14 17:02:40 | INFO    | batch_engine | Dependencies: ['JOB_01_FX_INGEST']
+2026-10-14 17:02:40 | INFO    | batch_engine | Executing [JOB_02_LEDGER_RECON] attempt 1/3 via 'python3 jobs/job_02_ledger_recon.py'...
+2026-10-14 17:02:40 | WARNING | batch_engine | [RETRY] Job [JOB_02_LEDGER_RECON] failed attempt 1 with exit code 1. Status: RETRYING. Waiting 2.0s before retry...
+2026-10-14 17:02:42 | INFO    | batch_engine | Executing [JOB_02_LEDGER_RECON] attempt 2/3 via 'python3 jobs/job_02_ledger_recon.py'...
+2026-10-14 17:02:43 | INFO    | batch_engine | [SUCCESS] Job [JOB_02_LEDGER_RECON] succeeded on attempt 2 (duration: 0.55s).
+2026-10-14 17:02:43 | INFO    | batch_engine | ------------------------------------------------------------
+2026-10-14 17:02:43 | INFO    | batch_engine | EVALUATING JOB: [JOB_03_EOD_SETTLEMENT] - End-of-Day Settlement Engine (P1)
+2026-10-14 17:02:43 | INFO    | batch_engine | Dependencies: ['JOB_02_LEDGER_RECON']
+2026-10-14 17:02:43 | INFO    | batch_engine | Executing [JOB_03_EOD_SETTLEMENT] attempt 1/3 via 'jobs/job_03_eod_settlement.sh'...
+2026-10-14 17:02:43 | WARNING | batch_engine | [RETRY] Job [JOB_03_EOD_SETTLEMENT] failed attempt 1 with exit code 2. Status: RETRYING. Waiting 2.0s before retry...
+2026-10-14 17:02:45 | INFO    | batch_engine | Executing [JOB_03_EOD_SETTLEMENT] attempt 2/3 via 'jobs/job_03_eod_settlement.sh'...
+2026-10-14 17:02:46 | WARNING | batch_engine | [RETRY] Job [JOB_03_EOD_SETTLEMENT] failed attempt 2 with exit code 2. Status: RETRYING. Waiting 2.0s before retry...
+2026-10-14 17:02:48 | INFO    | batch_engine | Executing [JOB_03_EOD_SETTLEMENT] attempt 3/3 via 'jobs/job_03_eod_settlement.sh'...
+2026-10-14 17:02:49 | ERROR   | batch_engine | [FAILED] Job [JOB_03_EOD_SETTLEMENT] permanently FAILED after 3 attempt(s) with exit code 2.
+2026-10-14 17:02:49 | INFO    | batch_engine | ------------------------------------------------------------
+2026-10-14 17:02:49 | INFO    | batch_engine | EVALUATING JOB: [JOB_04_REG_REPORT] - Daily Regulatory MAS/Fed Report (P1)
+2026-10-14 17:02:49 | INFO    | batch_engine | Dependencies: ['JOB_03_EOD_SETTLEMENT']
+2026-10-14 17:02:49 | WARNING | batch_engine | [BLOCKED] Job [JOB_04_REG_REPORT] marked as BLOCKED_BY_UPSTREAM. Reason: Dependency failure: Upstream job 'JOB_03_EOD_SETTLEMENT' status is 'FAILED'.
+2026-10-14 17:02:49 | INFO    | batch_engine | ================================================================================
+2026-10-14 17:02:49 | INFO    | batch_engine | BATCH RUN COMPLETED: RUN-20261014-170239 in 9.53s
+2026-10-14 17:02:49 | INFO    | batch_engine | ================================================================================
+2026-10-14 17:03:38 | INFO    | batch_engine | Loaded schedule 'Overnight Core Banking EOD Settlement & Reporting' with 4 jobs.
+2026-10-14 17:03:38 | INFO    | batch_engine | ================================================================================
+2026-10-14 17:03:38 | INFO    | batch_engine | STARTING BATCH RUN: RUN-20261014-170338 | DATE: 2026-10-14
+2026-10-14 17:03:38 | INFO    | batch_engine | Schedule: Overnight Core Banking EOD Settlement & Reporting
+2026-10-14 17:03:38 | INFO    | batch_engine | Resolved Execution Order: JOB_01_FX_INGEST -> JOB_02_LEDGER_RECON -> JOB_03_EOD_SETTLEMENT -> JOB_04_REG_REPORT
+2026-10-14 17:03:38 | INFO    | batch_engine | ================================================================================
+2026-10-14 17:03:38 | INFO    | batch_engine | ------------------------------------------------------------
+2026-10-14 17:03:38 | INFO    | batch_engine | EVALUATING JOB: [JOB_01_FX_INGEST] - FX Swift Feed Ingestion (P2)
+2026-10-14 17:03:38 | INFO    | batch_engine | Executing [JOB_01_FX_INGEST] attempt 1/3 via 'jobs/job_01_fx_ingest.sh'...
+2026-10-14 17:03:38 | INFO    | batch_engine | [SUCCESS] Job [JOB_01_FX_INGEST] succeeded on attempt 1 (duration: 0.62s).
+2026-10-14 17:03:38 | INFO    | batch_engine | ------------------------------------------------------------
+2026-10-14 17:03:38 | INFO    | batch_engine | EVALUATING JOB: [JOB_02_LEDGER_RECON] - General Ledger Reconciliation (P1)
+2026-10-14 17:03:38 | INFO    | batch_engine | Dependencies: ['JOB_01_FX_INGEST']
+2026-10-14 17:03:38 | INFO    | batch_engine | Executing [JOB_02_LEDGER_RECON] attempt 1/3 via 'python3 jobs/job_02_ledger_recon.py'...
+2026-10-14 17:03:39 | WARNING | batch_engine | [RETRY] Job [JOB_02_LEDGER_RECON] failed attempt 1 with exit code 1. Status: RETRYING. Waiting 2.0s before retry...
+2026-10-14 17:03:41 | INFO    | batch_engine | Executing [JOB_02_LEDGER_RECON] attempt 2/3 via 'python3 jobs/job_02_ledger_recon.py'...
+2026-10-14 17:03:41 | INFO    | batch_engine | [SUCCESS] Job [JOB_02_LEDGER_RECON] succeeded on attempt 2 (duration: 0.56s).
+2026-10-14 17:03:41 | INFO    | batch_engine | ------------------------------------------------------------
+2026-10-14 17:03:41 | INFO    | batch_engine | EVALUATING JOB: [JOB_03_EOD_SETTLEMENT] - End-of-Day Settlement Engine (P1)
+2026-10-14 17:03:41 | INFO    | batch_engine | Dependencies: ['JOB_02_LEDGER_RECON']
+2026-10-14 17:03:41 | INFO    | batch_engine | Executing [JOB_03_EOD_SETTLEMENT] attempt 1/3 via 'jobs/job_03_eod_settlement.sh'...
+2026-10-14 17:03:42 | WARNING | batch_engine | [RETRY] Job [JOB_03_EOD_SETTLEMENT] failed attempt 1 with exit code 2. Status: RETRYING. Waiting 2.0s before retry...
+2026-10-14 17:03:44 | INFO    | batch_engine | Executing [JOB_03_EOD_SETTLEMENT] attempt 2/3 via 'jobs/job_03_eod_settlement.sh'...
+2026-10-14 17:03:45 | WARNING | batch_engine | [RETRY] Job [JOB_03_EOD_SETTLEMENT] failed attempt 2 with exit code 2. Status: RETRYING. Waiting 2.0s before retry...
+2026-10-14 17:03:47 | INFO    | batch_engine | Executing [JOB_03_EOD_SETTLEMENT] attempt 3/3 via 'jobs/job_03_eod_settlement.sh'...
+2026-10-14 17:03:47 | ERROR   | batch_engine | [FAILED] Job [JOB_03_EOD_SETTLEMENT] permanently FAILED after 3 attempt(s) with exit code 2.
+2026-10-14 17:03:47 | INFO    | batch_engine | ------------------------------------------------------------
+2026-10-14 17:03:47 | INFO    | batch_engine | EVALUATING JOB: [JOB_04_REG_REPORT] - Daily Regulatory MAS/Fed Report (P1)
+2026-10-14 17:03:47 | INFO    | batch_engine | Dependencies: ['JOB_03_EOD_SETTLEMENT']
+2026-10-14 17:03:47 | WARNING | batch_engine | [BLOCKED] Job [JOB_04_REG_REPORT] marked as BLOCKED_BY_UPSTREAM. Reason: Dependency failure: Upstream job 'JOB_03_EOD_SETTLEMENT' status is 'FAILED'.
+2026-10-14 17:03:47 | INFO    | batch_engine | ================================================================================
+2026-10-14 17:03:47 | INFO    | batch_engine | BATCH RUN COMPLETED: RUN-20261014-170338 in 9.47s
+2026-10-14 17:03:47 | INFO    | batch_engine | ================================================================================
+2026-10-14 17:10:40 | INFO    | batch_engine | Loaded schedule 'Overnight Core Banking EOD Settlement & Reporting' with 4 jobs.
+2026-10-14 17:10:40 | INFO    | batch_engine | ================================================================================
+2026-10-14 17:10:40 | INFO    | batch_engine | STARTING BATCH RUN: RUN-20261014-171040 | DATE: 2026-10-14
+2026-10-14 17:10:40 | INFO    | batch_engine | Schedule: Overnight Core Banking EOD Settlement & Reporting
+2026-10-14 17:10:40 | INFO    | batch_engine | Resolved Execution Order: JOB_01_FX_INGEST -> JOB_02_LEDGER_RECON -> JOB_03_EOD_SETTLEMENT -> JOB_04_REG_REPORT
+2026-10-14 17:10:40 | INFO    | batch_engine | ================================================================================
+2026-10-14 17:10:40 | INFO    | batch_engine | ------------------------------------------------------------
+2026-10-14 17:10:40 | INFO    | batch_engine | EVALUATING JOB: [JOB_01_FX_INGEST] - FX Swift Feed Ingestion (P2)
+2026-10-14 17:10:40 | INFO    | batch_engine | Executing [JOB_01_FX_INGEST] attempt 1/3 via 'jobs/job_01_fx_ingest.sh'...
+2026-10-14 17:10:41 | INFO    | batch_engine | [SUCCESS] Job [JOB_01_FX_INGEST] succeeded on attempt 1 (duration: 0.62s).
+2026-10-14 17:10:41 | INFO    | batch_engine | ------------------------------------------------------------
+2026-10-14 17:10:41 | INFO    | batch_engine | EVALUATING JOB: [JOB_02_LEDGER_RECON] - General Ledger Reconciliation (P1)
+2026-10-14 17:10:41 | INFO    | batch_engine | Dependencies: ['JOB_01_FX_INGEST']
+2026-10-14 17:10:41 | INFO    | batch_engine | Executing [JOB_02_LEDGER_RECON] attempt 1/3 via 'python3 jobs/job_02_ledger_recon.py'...
+2026-10-14 17:10:41 | WARNING | batch_engine | [RETRY] Job [JOB_02_LEDGER_RECON] failed attempt 1 with exit code 1. Status: RETRYING. Waiting 2.0s before retry...
+2026-10-14 17:10:43 | INFO    | batch_engine | Executing [JOB_02_LEDGER_RECON] attempt 2/3 via 'python3 jobs/job_02_ledger_recon.py'...
+2026-10-14 17:10:44 | INFO    | batch_engine | [SUCCESS] Job [JOB_02_LEDGER_RECON] succeeded on attempt 2 (duration: 0.55s).
+2026-10-14 17:10:44 | WARNING | batch_engine | [SLA BREACH] Job [JOB_02_LEDGER_RECON] duration (3.18s) exceeded SLA threshold (1.50s)!
+2026-10-14 17:10:44 | INFO    | batch_engine | ------------------------------------------------------------
+2026-10-14 17:10:44 | INFO    | batch_engine | EVALUATING JOB: [JOB_03_EOD_SETTLEMENT] - End-of-Day Settlement Engine (P1)
+2026-10-14 17:10:44 | INFO    | batch_engine | Dependencies: ['JOB_02_LEDGER_RECON']
+2026-10-14 17:10:44 | INFO    | batch_engine | Executing [JOB_03_EOD_SETTLEMENT] attempt 1/3 via 'jobs/job_03_eod_settlement.sh'...
+2026-10-14 17:10:44 | WARNING | batch_engine | [RETRY] Job [JOB_03_EOD_SETTLEMENT] failed attempt 1 with exit code 2. Status: RETRYING. Waiting 2.0s before retry...
+2026-10-14 17:10:46 | INFO    | batch_engine | Executing [JOB_03_EOD_SETTLEMENT] attempt 2/3 via 'jobs/job_03_eod_settlement.sh'...
+2026-10-14 17:10:47 | WARNING | batch_engine | [RETRY] Job [JOB_03_EOD_SETTLEMENT] failed attempt 2 with exit code 2. Status: RETRYING. Waiting 2.0s before retry...
+2026-10-14 17:10:49 | INFO    | batch_engine | Executing [JOB_03_EOD_SETTLEMENT] attempt 3/3 via 'jobs/job_03_eod_settlement.sh'...
+2026-10-14 17:10:50 | ERROR   | batch_engine | [FAILED] Job [JOB_03_EOD_SETTLEMENT] permanently FAILED after 3 attempt(s) with exit code 2.
+2026-10-14 17:10:50 | INFO    | batch_engine | ------------------------------------------------------------
+2026-10-14 17:10:50 | INFO    | batch_engine | EVALUATING JOB: [JOB_04_REG_REPORT] - Daily Regulatory MAS/Fed Report (P1)
+2026-10-14 17:10:50 | INFO    | batch_engine | Dependencies: ['JOB_03_EOD_SETTLEMENT']
+2026-10-14 17:10:50 | WARNING | batch_engine | [BLOCKED] Job [JOB_04_REG_REPORT] marked as BLOCKED_BY_UPSTREAM. Reason: Dependency failure: Upstream job 'JOB_03_EOD_SETTLEMENT' status is 'FAILED'.
+2026-10-14 17:10:50 | INFO    | batch_engine | ================================================================================
+2026-10-14 17:10:50 | INFO    | batch_engine | BATCH RUN COMPLETED: RUN-20261014-171040 in 9.55s
+2026-10-14 17:10:50 | INFO    | batch_engine | ================================================================================
+2026-10-14 17:10:50 | INFO    | batch_engine | Initializing ServiceNow Incident Triage & ITIL Escalation Engine...
+2026-10-14 17:10:50 | INFO    | batch_engine | Generated P1 Incident [INC0010401] for FAILED job [JOB_03_EOD_SETTLEMENT] -> Core-Banking-DBA-L3
+2026-10-14 17:10:50 | INFO    | batch_engine | Generated P2 SLA Warning [INC0010402] for recovered job [JOB_02_LEDGER_RECON] (3.17s) -> FinControl-GL-Support-L2
+2026-10-14 17:10:50 | INFO    | batch_engine | Generated Child Incident [INC0010403] for BLOCKED job [JOB_04_REG_REPORT] (Parent: INC0010401) -> Regulatory-Reporting-L2
+2026-10-14 17:18:28 | INFO    | batch_engine | >>> STEP 1: Running Unix System Housekeeping & Daemon Health Checks...
+2026-10-14 17:18:28 | INFO    | batch_engine | Executing Unix System Housekeeping & Infrastructure Health Checks...
+2026-10-14 17:18:45 | INFO    | batch_engine | >>> STEP 1: Running Unix System Housekeeping & Daemon Health Checks...
+2026-10-14 17:18:45 | INFO    | batch_engine | Executing Unix System Housekeeping & Infrastructure Health Checks...
+2026-10-14 17:18:46 | INFO    | batch_engine | Housekeeping complete: 8 checks evaluated (All COMPLIANT).
+2026-10-14 17:18:46 | INFO    | batch_engine | >>> STEP 2: Executing Batch DAG Pipeline with Auto-Retry & SLA Monitoring...
+2026-10-14 17:18:46 | INFO    | batch_engine | Loaded schedule 'Overnight Core Banking EOD Settlement & Reporting' with 4 jobs.
+2026-10-14 17:18:46 | INFO    | batch_engine | ================================================================================
+2026-10-14 17:18:46 | INFO    | batch_engine | STARTING BATCH RUN: RUN-20261014-171845 | DATE: 2026-10-14
+2026-10-14 17:18:46 | INFO    | batch_engine | Schedule: Overnight Core Banking EOD Settlement & Reporting
+2026-10-14 17:18:46 | INFO    | batch_engine | Resolved Execution Order: JOB_01_FX_INGEST -> JOB_02_LEDGER_RECON -> JOB_03_EOD_SETTLEMENT -> JOB_04_REG_REPORT
+2026-10-14 17:18:46 | INFO    | batch_engine | ================================================================================
+2026-10-14 17:18:46 | INFO    | batch_engine | ------------------------------------------------------------
+2026-10-14 17:18:46 | INFO    | batch_engine | EVALUATING JOB: [JOB_01_FX_INGEST] - FX Swift Feed Ingestion (P2)
+2026-10-14 17:18:46 | INFO    | batch_engine | Executing [JOB_01_FX_INGEST] attempt 1/3 via 'jobs/job_01_fx_ingest.sh'...
+2026-10-14 17:18:46 | INFO    | batch_engine | [SUCCESS] Job [JOB_01_FX_INGEST] succeeded on attempt 1 (duration: 0.62s).
+2026-10-14 17:18:46 | INFO    | batch_engine | ------------------------------------------------------------
+2026-10-14 17:18:46 | INFO    | batch_engine | EVALUATING JOB: [JOB_02_LEDGER_RECON] - General Ledger Reconciliation (P1)
+2026-10-14 17:18:46 | INFO    | batch_engine | Dependencies: ['JOB_01_FX_INGEST']
+2026-10-14 17:18:46 | INFO    | batch_engine | Executing [JOB_02_LEDGER_RECON] attempt 1/3 via 'python3 jobs/job_02_ledger_recon.py'...
+2026-10-14 17:18:47 | WARNING | batch_engine | [RETRY] Job [JOB_02_LEDGER_RECON] failed attempt 1 with exit code 1. Status: RETRYING. Waiting 2.0s before retry...
+2026-10-14 17:18:49 | INFO    | batch_engine | Executing [JOB_02_LEDGER_RECON] attempt 2/3 via 'python3 jobs/job_02_ledger_recon.py'...
+2026-10-14 17:18:49 | INFO    | batch_engine | [SUCCESS] Job [JOB_02_LEDGER_RECON] succeeded on attempt 2 (duration: 0.60s).
+2026-10-14 17:18:49 | WARNING | batch_engine | [SLA BREACH] Job [JOB_02_LEDGER_RECON] duration (3.20s) exceeded SLA threshold (1.50s)!
+2026-10-14 17:18:49 | INFO    | batch_engine | ------------------------------------------------------------
+2026-10-14 17:18:49 | INFO    | batch_engine | EVALUATING JOB: [JOB_03_EOD_SETTLEMENT] - End-of-Day Settlement Engine (P1)
+2026-10-14 17:18:49 | INFO    | batch_engine | Dependencies: ['JOB_02_LEDGER_RECON']
+2026-10-14 17:18:50 | INFO    | batch_engine | Executing [JOB_03_EOD_SETTLEMENT] attempt 1/3 via 'jobs/job_03_eod_settlement.sh'...
+2026-10-14 17:18:50 | WARNING | batch_engine | [RETRY] Job [JOB_03_EOD_SETTLEMENT] failed attempt 1 with exit code 2. Status: RETRYING. Waiting 2.0s before retry...
+2026-10-14 17:18:52 | INFO    | batch_engine | Executing [JOB_03_EOD_SETTLEMENT] attempt 2/3 via 'jobs/job_03_eod_settlement.sh'...
+2026-10-14 17:18:53 | WARNING | batch_engine | [RETRY] Job [JOB_03_EOD_SETTLEMENT] failed attempt 2 with exit code 2. Status: RETRYING. Waiting 2.0s before retry...
+2026-10-14 17:18:55 | INFO    | batch_engine | Executing [JOB_03_EOD_SETTLEMENT] attempt 3/3 via 'jobs/job_03_eod_settlement.sh'...
+2026-10-14 17:18:55 | ERROR   | batch_engine | [FAILED] Job [JOB_03_EOD_SETTLEMENT] permanently FAILED after 3 attempt(s) with exit code 2.
+2026-10-14 17:18:55 | INFO    | batch_engine | ------------------------------------------------------------
+2026-10-14 17:18:55 | INFO    | batch_engine | EVALUATING JOB: [JOB_04_REG_REPORT] - Daily Regulatory MAS/Fed Report (P1)
+2026-10-14 17:18:55 | INFO    | batch_engine | Dependencies: ['JOB_03_EOD_SETTLEMENT']
+2026-10-14 17:18:55 | WARNING | batch_engine | [BLOCKED] Job [JOB_04_REG_REPORT] marked as BLOCKED_BY_UPSTREAM. Reason: Dependency failure: Upstream job 'JOB_03_EOD_SETTLEMENT' status is 'FAILED'.
+2026-10-14 17:18:55 | INFO    | batch_engine | ================================================================================
+2026-10-14 17:18:55 | INFO    | batch_engine | BATCH RUN COMPLETED: RUN-20261014-171845 in 9.54s
+2026-10-14 17:18:55 | INFO    | batch_engine | ================================================================================
+2026-10-14 17:18:55 | INFO    | batch_engine | >>> STEP 3: Initializing ServiceNow Incident Triage & ITIL Escalation Engine...
+2026-10-14 17:18:55 | INFO    | batch_engine | Generated P1 Incident [INC0010404] for FAILED job [JOB_03_EOD_SETTLEMENT] -> Core-Banking-DBA-L3
+2026-10-14 17:18:55 | INFO    | batch_engine | Generated P2 SLA Warning [INC0010405] for recovered job [JOB_02_LEDGER_RECON] (3.20s) -> FinControl-GL-Support-L2
+2026-10-14 17:18:55 | INFO    | batch_engine | Generated Child Incident [INC0010406] for BLOCKED job [JOB_04_REG_REPORT] (Parent: INC0010404) -> Regulatory-Reporting-L2
+2026-10-14 17:18:55 | INFO    | batch_engine | >>> STEP 4: Generating Daily Operational Check-Sheet & HTML Shift Handover Dashboard...
+2026-10-14 17:18:55 | INFO    | batch_engine | Generated CSV Operational Check-Sheet: /home/zarakari/Downloads/srestha_resume/Automated Batch Failure & SLA Alert Engine/reports/Daily_Ops_CheckSheet_RUN-20261014-171845.csv
+2026-10-14 17:18:55 | INFO    | batch_engine | Generated HTML Shift Handover Dashboard: /home/zarakari/Downloads/srestha_resume/Automated Batch Failure & SLA Alert Engine/reports/Shift_Handover_Dashboard_RUN-20261014-171845.html

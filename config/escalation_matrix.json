@@ -1,0 +1,60 @@
+{
+  "escalation_matrix_version": "1.0.0",
+  "organization": "Global Core Banking Operations",
+  "default_caller_id": "batchguard.automation",
+  "sla_policies": {
+    "P1 - Critical": {
+      "ack_target_min": 15,
+      "resolve_target_min": 60,
+      "bridge_required": true,
+      "pagerduty_escalation": true
+    },
+    "P2 - High": {
+      "ack_target_min": 30,
+      "resolve_target_min": 120,
+      "bridge_required": false,
+      "pagerduty_escalation": true
+    },
+    "P3 - Moderate": {
+      "ack_target_min": 120,
+      "resolve_target_min": 480,
+      "bridge_required": false,
+      "pagerduty_escalation": false
+    }
+  },
+  "job_escalation_rules": {
+    "JOB_01_FX_INGEST": {
+      "assignment_group": "SWIFT-Gateway-Ops-L2",
+      "sme_contact": "SWIFT Network Support",
+      "category": "Financial Messaging",
+      "subcategory": "SWIFT MT940 / MT535 Feeds",
+      "runbook_id": "KB0021045",
+      "business_service": "Foreign Exchange Settlements"
+    },
+    "JOB_02_LEDGER_RECON": {
+      "assignment_group": "FinControl-GL-Support-L2",
+      "sme_contact": "SAP/Oracle GL Team",
+      "category": "Financial Accounting",
+      "subcategory": "General Ledger Reconciliation",
+      "runbook_id": "KB0038912",
+      "business_service": "Chart of Accounts Balancing"
+    },
+    "JOB_03_EOD_SETTLEMENT": {
+      "assignment_group": "Core-Banking-DBA-L3",
+      "sme_contact": "Oracle RAC Escalation Desk",
+      "category": "Database Infrastructure",
+      "subcategory": "Deadlock & Lock Contention",
+      "runbook_id": "KB0041209",
+      "business_service": "Overnight Multi-Currency Settlement"
+    },
+    "JOB_04_REG_REPORT": {
+      "assignment_group": "Regulatory-Reporting-L2",
+      "sme_contact": "MAS/Fed Compliance Tech",
+      "category": "Regulatory Reporting",
+      "subcategory": "MAS 610 & Fed CCAR Daily Summary",
+      "runbook_id": "KB0019230",
+      "business_service": "Statutory Capital & Liquidity Reporting"
+    }
+  }
+}
+

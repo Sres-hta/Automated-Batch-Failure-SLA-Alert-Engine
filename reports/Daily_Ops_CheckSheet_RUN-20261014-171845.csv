@@ -1,0 +1,29 @@
+# FINOPS-BATCHGUARD DAILY OPERATIONAL CHECK-SHEET
+# Global Core Banking Operations Center | MUFG Bank
+Run ID,RUN-20261014-171845
+Generated At,2026-10-14 17:18:55
+Shift Rota,24x7 Night Shift (22:00-06:00) -> Morning Shift Handover
+
+--- SECTION 1: SYSTEM HOUSEKEEPING & INFRASTRUCTURE HEALTH ---
+Category,Metric Name,Measured Value,Threshold,Compliance Status,Checked At
+OS_RESOURCE,Disk Usage (/ mount),0.0% (3.2G Avail),< 85.0%,COMPLIANT,2026-10-14 17:18:46
+OS_RESOURCE,Memory Utilization,70.8% (1860 MB Free),< 90.0%,COMPLIANT,2026-10-14 17:18:46
+OS_RESOURCE,CPU Load Average (1m),0.96 (5m: 0.99),< 4.00,COMPLIANT,2026-10-14 17:18:46
+OS_RESOURCE,Zombie Process Count,0 zombies detected,0,COMPLIANT,2026-10-14 17:18:46
+FILE_SYSTEM_MAINTENANCE,Spool & Temp File Purge,"3 stale files purged, 0 orphaned",100% Stale Files Purged,COMPLIANT,2026-10-14 17:18:46
+CORE_BANKING_DAEMON,Daemon: controlm-agent,"ACTIVE (PID 14208, Port: 7005)",State: ACTIVE,COMPLIANT,2026-10-14 17:18:46
+CORE_BANKING_DAEMON,Daemon: swift-mq-listener,"ACTIVE (PID 15891, Channel: SWIFT.SVRCONN)",State: ACTIVE,COMPLIANT,2026-10-14 17:18:46
+CORE_BANKING_DAEMON,Daemon: as400-tn5250-bridge,"ACTIVE (PID 18022, Host: AS400-PROD-01)",State: ACTIVE,COMPLIANT,2026-10-14 17:18:46
+
+--- SECTION 2: BATCH EXECUTION & SLA PERFORMANCE MATRIX ---
+Job ID,Job Name,Status,Attempts,Exit Code,Duration (s),SLA Breached,Start Time,End Time
+JOB_01_FX_INGEST,FX Swift Feed Ingestion,SUCCESS,1,0,0.63,NO,2026-10-14 17:18:46,2026-10-14 17:18:46
+JOB_02_LEDGER_RECON,General Ledger Reconciliation,SUCCESS,2,0,3.20,YES (BREACH),2026-10-14 17:18:46,2026-10-14 17:18:49
+JOB_03_EOD_SETTLEMENT,End-of-Day Settlement Engine,FAILED,3,2,5.68,NO,2026-10-14 17:18:49,2026-10-14 17:18:55
+JOB_04_REG_REPORT,Daily Regulatory MAS/Fed Report,BLOCKED_BY_UPSTREAM,0,,0.00,NO,2026-10-14 17:18:55,2026-10-14 17:18:55
+
+--- SECTION 3: SERVICENOW INCIDENT ESCALATIONS & SHIFT HANDOVER ---
+Incident Number,Job ID,Incident Type,Priority,State,Assignment Group,SME Contact,Parent Incident,Short Description
+INC0010404,JOB_03_EOD_SETTLEMENT,HARD_FAILURE,P1 - Critical,Assigned,Core-Banking-DBA-L3,Oracle RAC Escalation Desk,None,[P1 INCIDENT] Hard Failure in End-of-Day Settlement Engine (JOB_03_EOD_SETTLEMENT) - Exit Code 2
+INC0010405,JOB_02_LEDGER_RECON,SLA_BREACH_WARNING,P2 - High,New,FinControl-GL-Support-L2,SAP/Oracle GL Team,None,[SLA BREACH WARNING] General Ledger Reconciliation (JOB_02_LEDGER_RECON) recovered on Retry but breached SLA (3.20s)
+INC0010406,JOB_04_REG_REPORT,UPSTREAM_DEPENDENCY_BLOCK,P3 - Moderate,On Hold - Awaiting Upstream,Regulatory-Reporting-L2,MAS/Fed Compliance Tech,INC0010404,[CASCADE SUPPRESSION] Execution Blocked: Daily Regulatory MAS/Fed Report (JOB_04_REG_REPORT) - Awaiting Parent INC0010404

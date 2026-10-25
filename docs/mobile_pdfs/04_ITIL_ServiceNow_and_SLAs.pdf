@@ -1,0 +1,190 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [9 0 R 11 0 R 13 0 R] /Count 3 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Oblique >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier >>
+endobj
+7 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier-Bold >>
+endobj
+8 0 obj
+<< /Length 3704 >>
+stream
+0.58 0.64 0.72 RG 0.5 w
+24.0 556.0 m 300.0 556.0 l S
+BT /F1 7.5 Tf 0.45 0.52 0.60 rg 24.0 560.0 Td (MUFG Masterclass * 04 ITIL ServiceNow & SLAs) Tj ET
+0.07 0.13 0.24 rg 24.0 466.0 276.0 68.0 re f
+0.12 0.24 0.45 RG 1 w 24.0 466.0 276.0 68.0 re s
+0.89 0.18 0.18 rg 24.0 466.0 4 68.0 re f
+BT /F2 7.5 Tf 0.35 0.65 0.95 rg 36.0 518.0 Td (ITIL v4 OPERATIONS) Tj ET
+BT /F2 13 Tf 0.98 0.98 1.0 rg 36.0 500.0 Td (ITIL & ServiceNow Engine) Tj ET
+BT /F1 8.5 Tf 0.70 0.78 0.88 rg 36.0 484.0 Td (Incident Triage & Parent-Child Linking) Tj ET
+0.80 0.84 0.90 RG 0.75 w 24.0 438.0 m 300.0 438.0 l S
+BT /F2 13.5 Tf 0.08 0.15 0.30 rg 24.0 442.0 Td (1. The 3 Core Operational Rules) Tj ET
+0.97 0.98 0.99 rg 24.0 278.0 276.0 146.0 re f
+0.82 0.86 0.90 RG 0.75 w 24.0 278.0 276.0 146.0 re s
+0.92 0.94 0.97 rg 24.0 406.0 276.0 18 re f
+BT /F2 9.0 Tf 0.10 0.18 0.35 rg 32.0 412.0 Td (RULE A: Hard Failure -> P1 Major Incident) Tj ET
+BT /F2 8.0 Tf 0.85 0.15 0.15 rg 225.0 412.0 Td (P1 CRITICAL) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 394.0 Td (Trigger:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 394.0 Td (Process exits non-zero after retries) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 379.0 Td (Target Job:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 379.0 Td (JOB_03_EOD_SETTLEMENT \(Exit 2\)) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 364.0 Td (Priority:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 364.0 Td (P1 - Critical \(Impact 1, Urgency 1\)) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 349.0 Td (State:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 349.0 Td (Assigned \(Major Incident Bridge\)) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 334.0 Td (Group:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 334.0 Td (Core-Banking-DBA-L3) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 319.0 Td (Primary SME:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 319.0 Td (Oracle RAC Escalation Desk) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 304.0 Td (Runbook SOP:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 304.0 Td (KB0041209 \(Deadlock Clearing\)) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 289.0 Td (Diagnostics:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 289.0 Td (Captures full stderr stack trace) Tj ET
+0.97 0.98 0.99 rg 24.0 139.0 276.0 131.0 re f
+0.82 0.86 0.90 RG 0.75 w 24.0 139.0 276.0 131.0 re s
+0.92 0.94 0.97 rg 24.0 252.0 276.0 18 re f
+BT /F2 9.0 Tf 0.10 0.18 0.35 rg 32.0 258.0 Td (RULE B: Cascading Block -> Linked Child Ticket) Tj ET
+BT /F2 8.0 Tf 0.85 0.15 0.15 rg 225.0 258.0 Td (P3 CHILD) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 240.0 Td (Trigger:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 240.0 Td (Downstream job blocked by upstream) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 225.0 Td (Target Job:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 225.0 Td (JOB_04_REG_REPORT \(MAS/Fed Report\)) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 210.0 Td (Priority:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 210.0 Td (P3 - Moderate \(Alert Suppressed\)) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 195.0 Td (State:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 195.0 Td (On Hold - Awaiting Upstream) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 180.0 Td (Group:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 180.0 Td (Regulatory-Reporting-L2) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 165.0 Td (Parent Incident:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 165.0 Td (INC0010404 \(Linked to JOB_03\)) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 150.0 Td (Purpose:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 150.0 Td (Eliminates Command Center alert storms) Tj ET
+0.58 0.64 0.72 RG 0.5 w 24.0 38.0 m 300.0 38.0 l S
+BT /F1 7.5 Tf 0.45 0.52 0.60 rg 24.0 29.0 Td (Page 1 of 3 * FinOps-BatchGuard MUFG Prep) Tj ET
+endstream
+endobj
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 324.0 576.0] /Contents 8 0 R /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R /F4 6 0 R /F5 7 0 R >> /ProcSet [/PDF /Text] >> >>
+endobj
+10 0 obj
+<< /Length 2291 >>
+stream
+0.58 0.64 0.72 RG 0.5 w
+24.0 556.0 m 300.0 556.0 l S
+BT /F1 7.5 Tf 0.45 0.52 0.60 rg 24.0 560.0 Td (MUFG Masterclass * 04 ITIL ServiceNow & SLAs) Tj ET
+0.97 0.98 0.99 rg 24.0 388.0 276.0 146.0 re f
+0.82 0.86 0.90 RG 0.75 w 24.0 388.0 276.0 146.0 re s
+0.92 0.94 0.97 rg 24.0 516.0 276.0 18 re f
+BT /F2 9.0 Tf 0.10 0.18 0.35 rg 32.0 522.0 Td (RULE C: Recovered Job with SLA Breach) Tj ET
+BT /F2 8.0 Tf 0.85 0.15 0.15 rg 225.0 522.0 Td (P2 WARNING) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 504.0 Td (Trigger:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 504.0 Td (Job succeeds but exceeds SLA limit) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 489.0 Td (Target Job:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 489.0 Td (JOB_02_LEDGER_RECON \(Balanced $4.28B\)) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 474.0 Td (Runtime:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 474.0 Td (3.20s wall-clock \(SLA limit: 1.50s\)) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 459.0 Td (Priority:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 459.0 Td (P2 - High \(Non-outage warning\)) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 444.0 Td (State:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 444.0 Td (New) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 429.0 Td (Group:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 429.0 Td (FinControl-GL-Support-L2) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 414.0 Td (Runbook SOP:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 414.0 Td (KB0038912 \(Lock Contention Tune\)) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 399.0 Td (Purpose:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 399.0 Td (Catches silent pipeline degradation) Tj ET
+0.80 0.84 0.90 RG 0.75 w 24.0 368.0 m 300.0 368.0 l S
+BT /F2 13.5 Tf 0.08 0.15 0.30 rg 24.0 372.0 Td (2. ServiceNow Table API REST Outbox) Tj ET
+BT /F1 10.0 Tf 0.20 0.24 0.30 rg 24.0 354.0 Td (Saved in) Tj ET
+BT /F1 10.0 Tf 0.20 0.24 0.30 rg 24.0 340.5 Td (data/servicenow_outbox/<incident_number>.json) Tj ET
+BT /F1 10.0 Tf 0.20 0.24 0.30 rg 24.0 327.0 Td (formatted for ServiceNow Table API ingestion \(POST) Tj ET
+BT /F1 10.0 Tf 0.20 0.24 0.30 rg 24.0 313.5 Td (/api/now/table/incident\):) Tj ET
+0.58 0.64 0.72 RG 0.5 w 24.0 38.0 m 300.0 38.0 l S
+BT /F1 7.5 Tf 0.45 0.52 0.60 rg 24.0 29.0 Td (Page 2 of 3 * FinOps-BatchGuard MUFG Prep) Tj ET
+endstream
+endobj
+11 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 324.0 576.0] /Contents 10 0 R /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R /F4 6 0 R /F5 7 0 R >> /ProcSet [/PDF /Text] >> >>
+endobj
+12 0 obj
+<< /Length 2806 >>
+stream
+0.58 0.64 0.72 RG 0.5 w
+24.0 556.0 m 300.0 556.0 l S
+BT /F1 7.5 Tf 0.45 0.52 0.60 rg 24.0 560.0 Td (MUFG Masterclass * 04 ITIL ServiceNow & SLAs) Tj ET
+0.08 0.11 0.16 rg 24.0 276.5 276.0 257.5 re f
+0.18 0.22 0.30 RG 0.75 w 24.0 276.5 276.0 257.5 re s
+BT /F4 8.0 Tf 0.85 0.92 1.0 rg 32.0 521.0 Td (// ServiceNow REST Payload Schema) Tj ET
+BT /F4 8.0 Tf 0.85 0.92 1.0 rg 32.0 509.5 Td ({) Tj ET
+BT /F4 8.0 Tf 0.85 0.92 1.0 rg 32.0 498.0 Td (  "number": "INC0010404",) Tj ET
+BT /F4 8.0 Tf 0.85 0.92 1.0 rg 32.0 486.5 Td (  "caller_id": "batchguard.automation",) Tj ET
+BT /F4 8.0 Tf 0.85 0.92 1.0 rg 32.0 475.0 Td (  "category": "Database Infrastructure",) Tj ET
+BT /F4 8.0 Tf 0.85 0.92 1.0 rg 32.0 463.5 Td (  "subcategory": "Deadlock & Lock) Tj ET
+BT /F4 8.0 Tf 0.85 0.92 1.0 rg 32.0 452.0 Td (Contention",) Tj ET
+BT /F4 8.0 Tf 0.85 0.92 1.0 rg 32.0 440.5 Td (  "impact": "1", "urgency": "1",) Tj ET
+BT /F4 8.0 Tf 0.85 0.92 1.0 rg 32.0 429.0 Td (  "priority": "P1 - Critical",) Tj ET
+BT /F4 8.0 Tf 0.85 0.92 1.0 rg 32.0 417.5 Td (  "state": "Assigned",) Tj ET
+BT /F4 8.0 Tf 0.85 0.92 1.0 rg 32.0 406.0 Td (  "assignment_group": "Core-Banking-) Tj ET
+BT /F4 8.0 Tf 0.85 0.92 1.0 rg 32.0 394.5 Td (DBA-L3",) Tj ET
+BT /F4 8.0 Tf 0.85 0.92 1.0 rg 32.0 383.0 Td (  "assigned_to": "Oracle RAC Escalation) Tj ET
+BT /F4 8.0 Tf 0.85 0.92 1.0 rg 32.0 371.5 Td (Desk",) Tj ET
+BT /F4 8.0 Tf 0.85 0.92 1.0 rg 32.0 360.0 Td (  "u_kb_article": "KB0041209",) Tj ET
+BT /F4 8.0 Tf 0.85 0.92 1.0 rg 32.0 348.5 Td (  "parent_incident": null,) Tj ET
+BT /F4 8.0 Tf 0.85 0.92 1.0 rg 32.0 337.0 Td (  "short_description": "[P1 INCIDENT] Hard) Tj ET
+BT /F4 8.0 Tf 0.85 0.92 1.0 rg 32.0 325.5 Td (Failure in...",) Tj ET
+BT /F4 8.0 Tf 0.85 0.92 1.0 rg 32.0 314.0 Td (  "work_notes": "Diagnostic stderr:) Tj ET
+BT /F4 8.0 Tf 0.85 0.92 1.0 rg 32.0 302.5 Td (ORA-00060...") Tj ET
+BT /F4 8.0 Tf 0.85 0.92 1.0 rg 32.0 291.0 Td (}) Tj ET
+0.80 0.84 0.90 RG 0.75 w 24.0 256.5 m 300.0 256.5 l S
+BT /F2 13.5 Tf 0.08 0.15 0.30 rg 24.0 260.5 Td (3. Shift Handover Reports) Tj ET
+BT /F2 9.5 Tf 0.18 0.22 0.28 rg 24.0 242.5 Td (* CSV Check-Sheet: Structured tabular export in) Tj ET
+BT /F1 9.5 Tf 0.18 0.22 0.28 rg 34.0 229.5 Td (reports/Daily_Ops_CheckSheet_*.csv for audit) Tj ET
+BT /F1 9.5 Tf 0.18 0.22 0.28 rg 34.0 216.5 Td (logs.) Tj ET
+BT /F2 9.5 Tf 0.18 0.22 0.28 rg 24.0 200.5 Td (* HTML Dashboard: Dark-themed responsive) Tj ET
+BT /F1 9.5 Tf 0.18 0.22 0.28 rg 34.0 187.5 Td (dashboard in) Tj ET
+BT /F1 9.5 Tf 0.18 0.22 0.28 rg 34.0 174.5 Td (reports/Shift_Handover_Dashboard_*.html with KPI) Tj ET
+BT /F1 9.5 Tf 0.18 0.22 0.28 rg 34.0 161.5 Td (cards, action items, and sign-off blocks.) Tj ET
+0.58 0.64 0.72 RG 0.5 w 24.0 38.0 m 300.0 38.0 l S
+BT /F1 7.5 Tf 0.45 0.52 0.60 rg 24.0 29.0 Td (Page 3 of 3 * FinOps-BatchGuard MUFG Prep) Tj ET
+endstream
+endobj
+13 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 324.0 576.0] /Contents 12 0 R /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R /F4 6 0 R /F5 7 0 R >> /ProcSet [/PDF /Text] >> >>
+endobj
+xref
+0 14
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000135 00000 n 
+0000000205 00000 n 
+0000000280 00000 n 
+0000000358 00000 n 
+0000000426 00000 n 
+0000000499 00000 n 
+0000004254 00000 n 
+0000004446 00000 n 
+0000006789 00000 n 
+0000006983 00000 n 
+0000009841 00000 n 
+trailer
+<< /Size 14 /Root 1 0 R >>
+startxref
+10035
+%%EOF

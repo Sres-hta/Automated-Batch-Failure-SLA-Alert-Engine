@@ -1,0 +1,441 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [9 0 R 11 0 R 13 0 R 15 0 R 17 0 R 19 0 R 21 0 R 23 0 R] /Count 8 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Oblique >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier >>
+endobj
+7 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier-Bold >>
+endobj
+8 0 obj
+<< /Length 3079 >>
+stream
+0.58 0.64 0.72 RG 0.5 w
+24.0 556.0 m 300.0 556.0 l S
+BT /F1 7.5 Tf 0.45 0.52 0.60 rg 24.0 560.0 Td (MUFG Masterclass * 05 15 Q&As & Cheat Sheet) Tj ET
+0.07 0.13 0.24 rg 24.0 466.0 276.0 68.0 re f
+0.12 0.24 0.45 RG 1 w 24.0 466.0 276.0 68.0 re s
+0.89 0.18 0.18 rg 24.0 466.0 4 68.0 re f
+BT /F2 7.5 Tf 0.35 0.65 0.95 rg 36.0 518.0 Td (MUFG INTERVIEW DRILLS) Tj ET
+BT /F2 13 Tf 0.98 0.98 1.0 rg 36.0 500.0 Td (15 Q&As & Cheat Sheet) Tj ET
+BT /F1 8.5 Tf 0.70 0.78 0.88 rg 36.0 484.0 Td (Technical Cross-Questions & Flashcards) Tj ET
+0.80 0.84 0.90 RG 0.75 w 24.0 438.0 m 300.0 438.0 l S
+BT /F2 13.5 Tf 0.08 0.15 0.30 rg 24.0 442.0 Td (Top 15 Interview Cross-Questions) Tj ET
+BT /F2 11 Tf 0.15 0.25 0.45 rg 24.0 420.0 Td (Q1 [Algorithms]: What happens if there is a circular dependency in batch_schedule.json?) Tj ET
+0.94 0.97 1.00 rg 24.0 354.0 276.0 51.0 re f
+0.78 0.88 0.98 RG 0.75 w 24.0 354.0 276.0 51.0 re s
+0.12 0.45 0.85 rg 24.0 354.0 3.5 51.0 re f
+BT /F2 9.5 Tf 0.08 0.32 0.65 rg 34.0 392.0 Td (WHY THE HIRING MANAGER ASKS THIS:) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 380.0 Td (Tests understanding of DAG scheduling) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 367.5 Td (algorithms.) Tj ET
+0.97 0.95 0.99 rg 24.0 270.0 276.0 76.0 re f
+0.88 0.80 0.95 RG 0.75 w 24.0 270.0 276.0 76.0 re s
+0.55 0.20 0.85 rg 24.0 270.0 3.5 76.0 re f
+BT /F2 9.5 Tf 0.40 0.10 0.65 rg 34.0 333.0 Td (CRISP SENIOR MODEL ANSWER:) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 321.0 Td (Kahn's algorithm tracks in-degrees. Cycle nodes) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 308.5 Td (never hit in-degree 0. The engine checks if) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 296.0 Td (len\(ordered\) != len\(jobs\) and raises ValueError) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 283.5 Td (immediately before executing any processes.) Tj ET
+BT /F2 11 Tf 0.15 0.25 0.45 rg 24.0 252.0 Td (Q2 [Database]: Why use SQLite WAL mode instead of PostgreSQL?) Tj ET
+0.94 0.97 1.00 rg 24.0 186.0 276.0 51.0 re f
+0.78 0.88 0.98 RG 0.75 w 24.0 186.0 276.0 51.0 re s
+0.12 0.45 0.85 rg 24.0 186.0 3.5 51.0 re f
+BT /F2 9.5 Tf 0.08 0.32 0.65 rg 34.0 224.0 Td (WHY THE HIRING MANAGER ASKS THIS:) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 212.0 Td (Tests distributed systems & high availability) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 199.5 Td (knowledge.) Tj ET
+0.97 0.95 0.99 rg 24.0 102.0 276.0 76.0 re f
+0.88 0.80 0.95 RG 0.75 w 24.0 102.0 276.0 76.0 re s
+0.55 0.20 0.85 rg 24.0 102.0 3.5 76.0 re f
+BT /F2 9.5 Tf 0.40 0.10 0.65 rg 34.0 165.0 Td (CRISP SENIOR MODEL ANSWER:) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 153.0 Td (For an on-host batch orchestrator agent, local) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 140.5 Td (storage prevents external network dependencies.) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 128.0 Td (WAL mode allows concurrent reads and writes) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 115.5 Td (without file-level locks.) Tj ET
+0.58 0.64 0.72 RG 0.5 w 24.0 38.0 m 300.0 38.0 l S
+BT /F1 7.5 Tf 0.45 0.52 0.60 rg 24.0 29.0 Td (Page 1 of 8 * FinOps-BatchGuard MUFG Prep) Tj ET
+endstream
+endobj
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 324.0 576.0] /Contents 8 0 R /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R /F4 6 0 R /F5 7 0 R >> /ProcSet [/PDF /Text] >> >>
+endobj
+10 0 obj
+<< /Length 1399 >>
+stream
+0.58 0.64 0.72 RG 0.5 w
+24.0 556.0 m 300.0 556.0 l S
+BT /F1 7.5 Tf 0.45 0.52 0.60 rg 24.0 560.0 Td (MUFG Masterclass * 05 15 Q&As & Cheat Sheet) Tj ET
+BT /F2 11 Tf 0.15 0.25 0.45 rg 24.0 530.0 Td (Q3 [Reliability]: How do you handle a job that hangs indefinitely?) Tj ET
+0.94 0.97 1.00 rg 24.0 464.0 276.0 51.0 re f
+0.78 0.88 0.98 RG 0.75 w 24.0 464.0 276.0 51.0 re s
+0.12 0.45 0.85 rg 24.0 464.0 3.5 51.0 re f
+BT /F2 9.5 Tf 0.08 0.32 0.65 rg 34.0 502.0 Td (WHY THE HIRING MANAGER ASKS THIS:) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 490.0 Td (Tests process lifecycle management under) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 477.5 Td (failure.) Tj ET
+0.97 0.95 0.99 rg 24.0 380.0 276.0 76.0 re f
+0.88 0.80 0.95 RG 0.75 w 24.0 380.0 276.0 76.0 re s
+0.55 0.20 0.85 rg 24.0 380.0 3.5 76.0 re f
+BT /F2 9.5 Tf 0.40 0.10 0.65 rg 34.0 443.0 Td (CRISP SENIOR MODEL ANSWER:) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 431.0 Td (Pass timeout to subprocess.run\(...,) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 418.5 Td (timeout=sec\). On TimeoutExpired, catch) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 406.0 Td (exception, call proc.kill\(\), mark FAILED, and) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 393.5 Td (trigger an immediate P1 incident.) Tj ET
+0.58 0.64 0.72 RG 0.5 w 24.0 38.0 m 300.0 38.0 l S
+BT /F1 7.5 Tf 0.45 0.52 0.60 rg 24.0 29.0 Td (Page 2 of 8 * FinOps-BatchGuard MUFG Prep) Tj ET
+endstream
+endobj
+11 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 324.0 576.0] /Contents 10 0 R /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R /F4 6 0 R /F5 7 0 R >> /ProcSet [/PDF /Text] >> >>
+endobj
+12 0 obj
+<< /Length 3553 >>
+stream
+0.58 0.64 0.72 RG 0.5 w
+24.0 556.0 m 300.0 556.0 l S
+BT /F1 7.5 Tf 0.45 0.52 0.60 rg 24.0 560.0 Td (MUFG Masterclass * 05 15 Q&As & Cheat Sheet) Tj ET
+BT /F2 11 Tf 0.15 0.25 0.45 rg 24.0 530.0 Td (Q4 [SLA Governance]: Why measure wall-clock time instead of CPU time?) Tj ET
+0.94 0.97 1.00 rg 24.0 476.5 276.0 38.5 re f
+0.78 0.88 0.98 RG 0.75 w 24.0 476.5 276.0 38.5 re s
+0.12 0.45 0.85 rg 24.0 476.5 3.5 38.5 re f
+BT /F2 9.5 Tf 0.08 0.32 0.65 rg 34.0 502.0 Td (WHY THE HIRING MANAGER ASKS THIS:) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 490.0 Td (Tests banking operational awareness.) Tj ET
+0.97 0.95 0.99 rg 24.0 392.5 276.0 76.0 re f
+0.88 0.80 0.95 RG 0.75 w 24.0 392.5 276.0 76.0 re s
+0.55 0.20 0.85 rg 24.0 392.5 3.5 76.0 re f
+BT /F2 9.5 Tf 0.40 0.10 0.65 rg 34.0 455.5 Td (CRISP SENIOR MODEL ANSWER:) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 443.5 Td (Banking deadlines depend on absolute clock) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 431.0 Td (time. A job taking 0.5s of CPU but sleeping 2) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 418.5 Td (minutes on retry delays the entire core banking) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 406.0 Td (window by 2 minutes.) Tj ET
+BT /F2 11 Tf 0.15 0.25 0.45 rg 24.0 374.5 Td (Q5 [Testing]: How does job_02 handle attempt detection idempotently?) Tj ET
+0.94 0.97 1.00 rg 24.0 308.5 276.0 51.0 re f
+0.78 0.88 0.98 RG 0.75 w 24.0 308.5 276.0 51.0 re s
+0.12 0.45 0.85 rg 24.0 308.5 3.5 51.0 re f
+BT /F2 9.5 Tf 0.08 0.32 0.65 rg 34.0 346.5 Td (WHY THE HIRING MANAGER ASKS THIS:) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 334.5 Td (Tests testing design and subprocess environment) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 322.0 Td (variables.) Tj ET
+0.97 0.95 0.99 rg 24.0 212.0 276.0 88.5 re f
+0.88 0.80 0.95 RG 0.75 w 24.0 212.0 276.0 88.5 re s
+0.55 0.20 0.85 rg 24.0 212.0 3.5 88.5 re f
+BT /F2 9.5 Tf 0.40 0.10 0.65 rg 34.0 287.5 Td (CRISP SENIOR MODEL ANSWER:) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 275.5 Td (Inspects BATCH_ATTEMPT environment variable) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 263.0 Td (first, falling back to) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 250.5 Td (data/.job_02_recon_state.json. Attempt 1 fails) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 238.0 Td (with lock error; Attempt 2 succeeds and unlinks) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 225.5 Td (state.) Tj ET
+BT /F2 11 Tf 0.15 0.25 0.45 rg 24.0 194.0 Td (Q6 [Unix OS]: Walk me through your df and free parsing commands.) Tj ET
+0.94 0.97 1.00 rg 24.0 140.5 276.0 38.5 re f
+0.78 0.88 0.98 RG 0.75 w 24.0 140.5 276.0 38.5 re s
+0.12 0.45 0.85 rg 24.0 140.5 3.5 38.5 re f
+BT /F2 9.5 Tf 0.08 0.32 0.65 rg 34.0 166.0 Td (WHY THE HIRING MANAGER ASKS THIS:) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 154.0 Td (Tests practical Linux sysadmin competence.) Tj ET
+0.97 0.95 0.99 rg 24.0 56.5 276.0 76.0 re f
+0.88 0.80 0.95 RG 0.75 w 24.0 56.5 276.0 76.0 re s
+0.55 0.20 0.85 rg 24.0 56.5 3.5 76.0 re f
+BT /F2 9.5 Tf 0.40 0.10 0.65 rg 34.0 119.5 Td (CRISP SENIOR MODEL ANSWER:) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 107.5 Td (We use awk to search for the token with % in df) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 95.0 Td (-h /, making it resilient to shifting columns.) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 82.5 Td (In free -m, we check available memory \(column) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 70.0 Td (7\) rather than raw free.) Tj ET
+0.58 0.64 0.72 RG 0.5 w 24.0 38.0 m 300.0 38.0 l S
+BT /F1 7.5 Tf 0.45 0.52 0.60 rg 24.0 29.0 Td (Page 3 of 8 * FinOps-BatchGuard MUFG Prep) Tj ET
+endstream
+endobj
+13 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 324.0 576.0] /Contents 12 0 R /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R /F4 6 0 R /F5 7 0 R >> /ProcSet [/PDF /Text] >> >>
+endobj
+14 0 obj
+<< /Length 2400 >>
+stream
+0.58 0.64 0.72 RG 0.5 w
+24.0 556.0 m 300.0 556.0 l S
+BT /F1 7.5 Tf 0.45 0.52 0.60 rg 24.0 560.0 Td (MUFG Masterclass * 05 15 Q&As & Cheat Sheet) Tj ET
+BT /F2 11 Tf 0.15 0.25 0.45 rg 24.0 530.0 Td (Q7 [Incident]: If /var/log hits 94% disk usage before EOD, what do you do?) Tj ET
+0.94 0.97 1.00 rg 24.0 476.5 276.0 38.5 re f
+0.78 0.88 0.98 RG 0.75 w 24.0 476.5 276.0 38.5 re s
+0.12 0.45 0.85 rg 24.0 476.5 3.5 38.5 re f
+BT /F2 9.5 Tf 0.08 0.32 0.65 rg 34.0 502.0 Td (WHY THE HIRING MANAGER ASKS THIS:) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 490.0 Td (Tests emergency L1 triage under pressure.) Tj ET
+0.97 0.95 0.99 rg 24.0 392.5 276.0 76.0 re f
+0.88 0.80 0.95 RG 0.75 w 24.0 392.5 276.0 76.0 re s
+0.55 0.20 0.85 rg 24.0 392.5 3.5 76.0 re f
+BT /F2 9.5 Tf 0.40 0.10 0.65 rg 34.0 455.5 Td (CRISP SENIOR MODEL ANSWER:) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 443.5 Td (Run df -h to verify, du -ahx /var/log | sort) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 431.0 Td (-rh | head -20 to find runaway logs, lsof +L1) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 418.5 Td (to check for deleted files held open by) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 406.0 Td (processes, and gzip old logs.) Tj ET
+BT /F2 11 Tf 0.15 0.25 0.45 rg 24.0 374.5 Td (Q8 [Unix OS]: What are zombie processes and how do you kill them?) Tj ET
+0.94 0.97 1.00 rg 24.0 321.0 276.0 38.5 re f
+0.78 0.88 0.98 RG 0.75 w 24.0 321.0 276.0 38.5 re s
+0.12 0.45 0.85 rg 24.0 321.0 3.5 38.5 re f
+BT /F2 9.5 Tf 0.08 0.32 0.65 rg 34.0 346.5 Td (WHY THE HIRING MANAGER ASKS THIS:) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 334.5 Td (Tests OS kernel process lifecycle knowledge.) Tj ET
+0.97 0.95 0.99 rg 24.0 237.0 276.0 76.0 re f
+0.88 0.80 0.95 RG 0.75 w 24.0 237.0 276.0 76.0 re s
+0.55 0.20 0.85 rg 24.0 237.0 3.5 76.0 re f
+BT /F2 9.5 Tf 0.40 0.10 0.65 rg 34.0 300.0 Td (CRISP SENIOR MODEL ANSWER:) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 288.0 Td (Zombies \(state Z\) have finished execution but) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 275.5 Td (their parent hasn't reaped them with wait\(\).) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 263.0 Td (Kill -9 fails on zombies. Send SIGCHLD to the) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 250.5 Td (parent or bounce the parent.) Tj ET
+0.58 0.64 0.72 RG 0.5 w 24.0 38.0 m 300.0 38.0 l S
+BT /F1 7.5 Tf 0.45 0.52 0.60 rg 24.0 29.0 Td (Page 4 of 8 * FinOps-BatchGuard MUFG Prep) Tj ET
+endstream
+endobj
+15 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 324.0 576.0] /Contents 14 0 R /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R /F4 6 0 R /F5 7 0 R >> /ProcSet [/PDF /Text] >> >>
+endobj
+16 0 obj
+<< /Length 3028 >>
+stream
+0.58 0.64 0.72 RG 0.5 w
+24.0 556.0 m 300.0 556.0 l S
+BT /F1 7.5 Tf 0.45 0.52 0.60 rg 24.0 560.0 Td (MUFG Masterclass * 05 15 Q&As & Cheat Sheet) Tj ET
+BT /F2 11 Tf 0.15 0.25 0.45 rg 24.0 530.0 Td (Q9 [Architecture]: Why check daemons like controlm-agent and swift-mq?) Tj ET
+0.94 0.97 1.00 rg 24.0 464.0 276.0 51.0 re f
+0.78 0.88 0.98 RG 0.75 w 24.0 464.0 276.0 51.0 re s
+0.12 0.45 0.85 rg 24.0 464.0 3.5 51.0 re f
+BT /F2 9.5 Tf 0.08 0.32 0.65 rg 34.0 502.0 Td (WHY THE HIRING MANAGER ASKS THIS:) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 490.0 Td (Tests middleware awareness in financial) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 477.5 Td (networks.) Tj ET
+0.97 0.95 0.99 rg 24.0 367.5 276.0 88.5 re f
+0.88 0.80 0.95 RG 0.75 w 24.0 367.5 276.0 88.5 re s
+0.55 0.20 0.85 rg 24.0 367.5 3.5 88.5 re f
+BT /F2 9.5 Tf 0.40 0.10 0.65 rg 34.0 443.0 Td (CRISP SENIOR MODEL ANSWER:) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 431.0 Td (Batch scripts rely on external bridges.) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 418.5 Td (Control-M agent receives instructions on port) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 406.0 Td (7005; SWIFT MQ listener receives payments on) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 393.5 Td (IBM MQ channels. We verify them before batch) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 381.0 Td (start.) Tj ET
+BT /F2 11 Tf 0.15 0.25 0.45 rg 24.0 349.5 Td (Q10 [Operations]: How do you prevent batch_engine.log from filling the disk?) Tj ET
+0.94 0.97 1.00 rg 24.0 296.0 276.0 38.5 re f
+0.78 0.88 0.98 RG 0.75 w 24.0 296.0 276.0 38.5 re s
+0.12 0.45 0.85 rg 24.0 296.0 3.5 38.5 re f
+BT /F2 9.5 Tf 0.08 0.32 0.65 rg 34.0 321.5 Td (WHY THE HIRING MANAGER ASKS THIS:) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 309.5 Td (Tests logging best practices.) Tj ET
+0.97 0.95 0.99 rg 24.0 212.0 276.0 76.0 re f
+0.88 0.80 0.95 RG 0.75 w 24.0 212.0 276.0 76.0 re s
+0.55 0.20 0.85 rg 24.0 212.0 3.5 76.0 re f
+BT /F2 9.5 Tf 0.40 0.10 0.65 rg 34.0 275.0 Td (CRISP SENIOR MODEL ANSWER:) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 263.0 Td (Configure RotatingFileHandler\(maxBytes=50MB,) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 250.5 Td (backupCount=10\) in Python, and configure Linux) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 238.0 Td (logrotate with daily, rotate 30, compress, and) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 225.5 Td (copytruncate.) Tj ET
+BT /F2 11 Tf 0.15 0.25 0.45 rg 24.0 194.0 Td (Q11 [Banking]: Why didn't you auto-retry JOB_04 when it was blocked?) Tj ET
+0.94 0.97 1.00 rg 24.0 128.0 276.0 51.0 re f
+0.78 0.88 0.98 RG 0.75 w 24.0 128.0 276.0 51.0 re s
+0.12 0.45 0.85 rg 24.0 128.0 3.5 51.0 re f
+BT /F2 9.5 Tf 0.08 0.32 0.65 rg 34.0 166.0 Td (WHY THE HIRING MANAGER ASKS THIS:) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 154.0 Td (Tests understanding of financial accounting) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 141.5 Td (integrity.) Tj ET
+0.58 0.64 0.72 RG 0.5 w 24.0 38.0 m 300.0 38.0 l S
+BT /F1 7.5 Tf 0.45 0.52 0.60 rg 24.0 29.0 Td (Page 5 of 8 * FinOps-BatchGuard MUFG Prep) Tj ET
+endstream
+endobj
+17 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 324.0 576.0] /Contents 16 0 R /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R /F4 6 0 R /F5 7 0 R >> /ProcSet [/PDF /Text] >> >>
+endobj
+18 0 obj
+<< /Length 2003 >>
+stream
+0.58 0.64 0.72 RG 0.5 w
+24.0 556.0 m 300.0 556.0 l S
+BT /F1 7.5 Tf 0.45 0.52 0.60 rg 24.0 560.0 Td (MUFG Masterclass * 05 15 Q&As & Cheat Sheet) Tj ET
+0.97 0.95 0.99 rg 24.0 458.0 276.0 76.0 re f
+0.88 0.80 0.95 RG 0.75 w 24.0 458.0 276.0 76.0 re s
+0.55 0.20 0.85 rg 24.0 458.0 3.5 76.0 re f
+BT /F2 9.5 Tf 0.40 0.10 0.65 rg 34.0 521.0 Td (CRISP SENIOR MODEL ANSWER:) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 509.0 Td (JOB_04 was deliberately blocked because EOD) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 496.5 Td (settlement failed. Retrying statutory reporting) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 484.0 Td (against uncommitted ledger balances causes) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 471.5 Td (invalid regulatory returns.) Tj ET
+BT /F2 11 Tf 0.15 0.25 0.45 rg 24.0 440.0 Td (Q12 [Operations]: If JOB_03 is fixed at 3:15 AM, how do you resume?) Tj ET
+0.94 0.97 1.00 rg 24.0 374.0 276.0 51.0 re f
+0.78 0.88 0.98 RG 0.75 w 24.0 374.0 276.0 51.0 re s
+0.12 0.45 0.85 rg 24.0 374.0 3.5 51.0 re f
+BT /F2 9.5 Tf 0.08 0.32 0.65 rg 34.0 412.0 Td (WHY THE HIRING MANAGER ASKS THIS:) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 400.0 Td (Tests disaster recovery & operational restart) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 387.5 Td (procedures.) Tj ET
+0.97 0.95 0.99 rg 24.0 290.0 276.0 76.0 re f
+0.88 0.80 0.95 RG 0.75 w 24.0 290.0 276.0 76.0 re s
+0.55 0.20 0.85 rg 24.0 290.0 3.5 76.0 re f
+BT /F2 9.5 Tf 0.40 0.10 0.65 rg 34.0 353.0 Td (CRISP SENIOR MODEL ANSWER:) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 341.0 Td (Query SQLite job_runs, confirm JOB_01 and) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 328.5 Td (JOB_02 are SUCCESS, bypass them, and resume) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 316.0 Td (directly from JOB_03, unblocking JOB_04 upon) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 303.5 Td (settlement completion.) Tj ET
+0.58 0.64 0.72 RG 0.5 w 24.0 38.0 m 300.0 38.0 l S
+BT /F1 7.5 Tf 0.45 0.52 0.60 rg 24.0 29.0 Td (Page 6 of 8 * FinOps-BatchGuard MUFG Prep) Tj ET
+endstream
+endobj
+19 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 324.0 576.0] /Contents 18 0 R /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R /F4 6 0 R /F5 7 0 R >> /ProcSet [/PDF /Text] >> >>
+endobj
+20 0 obj
+<< /Length 3552 >>
+stream
+0.58 0.64 0.72 RG 0.5 w
+24.0 556.0 m 300.0 556.0 l S
+BT /F1 7.5 Tf 0.45 0.52 0.60 rg 24.0 560.0 Td (MUFG Masterclass * 05 15 Q&As & Cheat Sheet) Tj ET
+BT /F2 11 Tf 0.15 0.25 0.45 rg 24.0 530.0 Td (Q13 [ITIL]: How does parent-child correlation stop Alert Storms?) Tj ET
+0.94 0.97 1.00 rg 24.0 464.0 276.0 51.0 re f
+0.78 0.88 0.98 RG 0.75 w 24.0 464.0 276.0 51.0 re s
+0.12 0.45 0.85 rg 24.0 464.0 3.5 51.0 re f
+BT /F2 9.5 Tf 0.08 0.32 0.65 rg 34.0 502.0 Td (WHY THE HIRING MANAGER ASKS THIS:) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 490.0 Td (Tests ITIL incident deduplication) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 477.5 Td (understanding.) Tj ET
+0.97 0.95 0.99 rg 24.0 380.0 276.0 76.0 re f
+0.88 0.80 0.95 RG 0.75 w 24.0 380.0 276.0 76.0 re s
+0.55 0.20 0.85 rg 24.0 380.0 3.5 76.0 re f
+BT /F2 9.5 Tf 0.40 0.10 0.65 rg 34.0 443.0 Td (CRISP SENIOR MODEL ANSWER:) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 431.0 Td (Creates 1 primary P1 ticket for the root) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 418.5 Td (failure \(JOB_03\) and marks downstream blocked) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 406.0 Td (jobs \(JOB_04\) as child tickets on hold,) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 393.5 Td (focusing everyone on 1 bridge.) Tj ET
+BT /F2 11 Tf 0.15 0.25 0.45 rg 24.0 362.0 Td (Q14 [ITIL]: Why raise a P2 ticket for JOB_02 if it ended with Exit 0?) Tj ET
+0.94 0.97 1.00 rg 24.0 308.5 276.0 38.5 re f
+0.78 0.88 0.98 RG 0.75 w 24.0 308.5 276.0 38.5 re s
+0.12 0.45 0.85 rg 24.0 308.5 3.5 38.5 re f
+BT /F2 9.5 Tf 0.08 0.32 0.65 rg 34.0 334.0 Td (WHY THE HIRING MANAGER ASKS THIS:) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 322.0 Td (Tests performance tuning vs functional success.) Tj ET
+0.97 0.95 0.99 rg 24.0 224.5 276.0 76.0 re f
+0.88 0.80 0.95 RG 0.75 w 24.0 224.5 276.0 76.0 re s
+0.55 0.20 0.85 rg 24.0 224.5 3.5 76.0 re f
+BT /F2 9.5 Tf 0.40 0.10 0.65 rg 34.0 287.5 Td (CRISP SENIOR MODEL ANSWER:) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 275.5 Td (Functional success does not equal SLA) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 263.0 Td (compliance. Taking 3.20s vs 1.5s SLA window) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 250.5 Td (delays downstream cutoffs. P2 ticket alerts GL) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 238.0 Td (support to tune lock contention.) Tj ET
+BT /F2 11 Tf 0.15 0.25 0.45 rg 24.0 206.5 Td (Q15 [Audit]: How does this report satisfy MAS and Fed audit rules?) Tj ET
+0.94 0.97 1.00 rg 24.0 140.5 276.0 51.0 re f
+0.78 0.88 0.98 RG 0.75 w 24.0 140.5 276.0 51.0 re s
+0.12 0.45 0.85 rg 24.0 140.5 3.5 51.0 re f
+BT /F2 9.5 Tf 0.08 0.32 0.65 rg 34.0 178.5 Td (WHY THE HIRING MANAGER ASKS THIS:) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 166.5 Td (Tests regulatory and audit compliance) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 154.0 Td (knowledge.) Tj ET
+0.97 0.95 0.99 rg 24.0 56.5 276.0 76.0 re f
+0.88 0.80 0.95 RG 0.75 w 24.0 56.5 276.0 76.0 re s
+0.55 0.20 0.85 rg 24.0 56.5 3.5 76.0 re f
+BT /F2 9.5 Tf 0.40 0.10 0.65 rg 34.0 119.5 Td (CRISP SENIOR MODEL ANSWER:) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 107.5 Td (MAS TRM and Fed FFIEC require immutable event) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 95.0 Td (logs and formal handovers. Our engine provides) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 82.5 Td (pre-batch OS telemetry, execution logs,) Tj ET
+BT /F1 9.0 Tf 0.15 0.20 0.25 rg 34.0 70.0 Td (tickets, and analyst sign-offs.) Tj ET
+0.58 0.64 0.72 RG 0.5 w 24.0 38.0 m 300.0 38.0 l S
+BT /F1 7.5 Tf 0.45 0.52 0.60 rg 24.0 29.0 Td (Page 7 of 8 * FinOps-BatchGuard MUFG Prep) Tj ET
+endstream
+endobj
+21 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 324.0 576.0] /Contents 20 0 R /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R /F4 6 0 R /F5 7 0 R >> /ProcSet [/PDF /Text] >> >>
+endobj
+22 0 obj
+<< /Length 4313 >>
+stream
+0.58 0.64 0.72 RG 0.5 w
+24.0 556.0 m 300.0 556.0 l S
+BT /F1 7.5 Tf 0.45 0.52 0.60 rg 24.0 560.0 Td (MUFG Masterclass * 05 15 Q&As & Cheat Sheet) Tj ET
+0.80 0.84 0.90 RG 0.75 w 24.0 522.0 m 300.0 522.0 l S
+BT /F2 13.5 Tf 0.08 0.15 0.30 rg 24.0 526.0 Td (Rapid-Fire Flashcard Cheat Sheet) Tj ET
+0.97 0.98 0.99 rg 24.0 422.0 276.0 86.0 re f
+0.82 0.86 0.90 RG 0.75 w 24.0 422.0 276.0 86.0 re s
+0.92 0.94 0.97 rg 24.0 490.0 276.0 18 re f
+BT /F2 9.0 Tf 0.10 0.18 0.35 rg 32.0 496.0 Td (1. Jobs & Exit Codes) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 478.0 Td (JOB_01_FX_INGEST:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 478.0 Td (Exit 0 \(Success, 0.63s, SLA 5.0s\)) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 463.0 Td (JOB_02_LEDGER_RECON:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 463.0 Td (Exit 0 Att 2 \(SLA BREACH 3.20s > 1.5s\)) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 448.0 Td (JOB_03_EOD_SETTLEMENT:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 448.0 Td (Exit 2 Att 3 \(FAILED, Deadlock ORA-00060\)) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 433.0 Td (JOB_04_REG_REPORT:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 433.0 Td (Exit - \(BLOCKED_BY_UPSTREAM\)) Tj ET
+0.97 0.98 0.99 rg 24.0 343.0 276.0 71.0 re f
+0.82 0.86 0.90 RG 0.75 w 24.0 343.0 276.0 71.0 re s
+0.92 0.94 0.97 rg 24.0 396.0 276.0 18 re f
+BT /F2 9.0 Tf 0.10 0.18 0.35 rg 32.0 402.0 Td (2. Incidents & Runbooks) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 384.0 Td (INC0010404 \(P1\):) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 384.0 Td (JOB_03 | Core-Banking-DBA-L3 | KB0041209) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 369.0 Td (INC0010405 \(P2\):) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 369.0 Td (JOB_02 | FinControl-GL-Support-L2 | KB0038912) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 354.0 Td (INC0010406 \(P3\):) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 354.0 Td (JOB_04 | Regulatory-Reporting-L2 | Parent: INC0010404) Tj ET
+0.97 0.98 0.99 rg 24.0 219.0 276.0 116.0 re f
+0.82 0.86 0.90 RG 0.75 w 24.0 219.0 276.0 116.0 re s
+0.92 0.94 0.97 rg 24.0 317.0 276.0 18 re f
+BT /F2 9.0 Tf 0.10 0.18 0.35 rg 32.0 323.0 Td (3. Linux Telemetry & Daemons) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 305.0 Td (Disk Usage:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 305.0 Td (df -h / \(< 85% threshold, 0.0% measured\)) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 290.0 Td (Memory Usage:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 290.0 Td (free -m \(< 90% threshold, 70.8% measured\)) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 275.0 Td (CPU Load \(1m\):) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 275.0 Td (/proc/loadavg \(< 4.0 threshold, 0.96 measured\)) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 260.0 Td (Zombies:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 260.0 Td (ps aux | awk '$8=="Z"' \(0 detected\)) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 245.0 Td (Spool Purge:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 245.0 Td (3 files purged from data/spool_tmp/) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 230.0 Td (Daemons Verified:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 230.0 Td (controlm \(7005\), swift-mq, as400) Tj ET
+0.97 0.98 0.99 rg 24.0 110.0 276.0 101.0 re f
+0.82 0.86 0.90 RG 0.75 w 24.0 110.0 276.0 101.0 re s
+0.92 0.94 0.97 rg 24.0 193.0 276.0 18 re f
+BT /F2 9.0 Tf 0.10 0.18 0.35 rg 32.0 199.0 Td (4. CLI Commands Quick Reference) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 181.0 Td (Run Full Batch:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 181.0 Td (python3 main.py --run-batch) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 166.0 Td (Inspect Database:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 166.0 Td (python3 main.py --show-db) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 151.0 Td (View CSV Report:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 151.0 Td (cat reports/Daily_Ops_CheckSheet_*.csv) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 136.0 Td (View HTML Report:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 136.0 Td (google-chrome reports/Shift_Handover_*.html) Tj ET
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 32.0 121.0 Td (View Outbox REST:) Tj ET
+BT /F1 8.5 Tf 0.12 0.15 0.20 rg 119.0 121.0 Td (cat data/servicenow_outbox/INC0010404.json) Tj ET
+0.58 0.64 0.72 RG 0.5 w 24.0 38.0 m 300.0 38.0 l S
+BT /F1 7.5 Tf 0.45 0.52 0.60 rg 24.0 29.0 Td (Page 8 of 8 * FinOps-BatchGuard MUFG Prep) Tj ET
+endstream
+endobj
+23 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 324.0 576.0] /Contents 22 0 R /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R /F4 6 0 R /F5 7 0 R >> /ProcSet [/PDF /Text] >> >>
+endobj
+xref
+0 24
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000170 00000 n 
+0000000240 00000 n 
+0000000315 00000 n 
+0000000393 00000 n 
+0000000461 00000 n 
+0000000534 00000 n 
+0000003664 00000 n 
+0000003856 00000 n 
+0000005307 00000 n 
+0000005501 00000 n 
+0000009106 00000 n 
+0000009300 00000 n 
+0000011752 00000 n 
+0000011946 00000 n 
+0000015026 00000 n 
+0000015220 00000 n 
+0000017275 00000 n 
+0000017469 00000 n 
+0000021073 00000 n 
+0000021267 00000 n 
+0000025632 00000 n 
+trailer
+<< /Size 24 /Root 1 0 R >>
+startxref
+25826
+%%EOF

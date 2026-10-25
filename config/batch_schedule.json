@@ -1,0 +1,54 @@
+{
+  "batch_schedule_id": "SCHED_CORE_BANKING_EOD",
+  "batch_name": "Overnight Core Banking EOD Settlement & Reporting",
+  "timezone": "UTC",
+  "version": "1.1.0",
+  "jobs": [
+    {
+      "job_id": "JOB_01_FX_INGEST",
+      "job_name": "FX Swift Feed Ingestion",
+      "command": "jobs/job_01_fx_ingest.sh",
+      "depends_on": [],
+      "max_retries": 2,
+      "retry_delay_sec": 2,
+      "sla_max_duration_sec": 5.0,
+      "criticality": "P2"
+    },
+    {
+      "job_id": "JOB_02_LEDGER_RECON",
+      "job_name": "General Ledger Reconciliation",
+      "command": "python3 jobs/job_02_ledger_recon.py",
+      "depends_on": [
+        "JOB_01_FX_INGEST"
+      ],
+      "max_retries": 2,
+      "retry_delay_sec": 2,
+      "sla_max_duration_sec": 1.5,
+      "criticality": "P1"
+    },
+    {
+      "job_id": "JOB_03_EOD_SETTLEMENT",
+      "job_name": "End-of-Day Settlement Engine",
+      "command": "jobs/job_03_eod_settlement.sh",
+      "depends_on": [
+        "JOB_02_LEDGER_RECON"
+      ],
+      "max_retries": 2,
+      "retry_delay_sec": 2,
+      "sla_max_duration_sec": 10.0,
+      "criticality": "P1"
+    },
+    {
+      "job_id": "JOB_04_REG_REPORT",
+      "job_name": "Daily Regulatory MAS/Fed Report",
+      "command": "jobs/job_04_reg_report.sh",
+      "depends_on": [
+        "JOB_03_EOD_SETTLEMENT"
+      ],
+      "max_retries": 1,
+      "retry_delay_sec": 2,
+      "sla_max_duration_sec": 10.0,
+      "criticality": "P1"
+    }
+  ]
+}
